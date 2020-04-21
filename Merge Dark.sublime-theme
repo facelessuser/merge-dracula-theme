@@ -20,11 +20,11 @@
         "medium_gray-light": "color(var(--background) l(48%))",
         "medium_gray": "color(var(--background) l(58%))",
         "medium_gray-dark": "color(var(--background) l(38%))",
-        "dark_gray-lightest": "color(var(--background) l(16%))",
-        "dark_gray-light": "color(var(--background) l(14%))",
+        "dark_gray-lightest": "color(var(--background) l(24%))",
+        "dark_gray-light": "color(var(--background) l(20%))",
         "dark_gray-medium": "color(var(--background) l(10%))",
-        "dark_gray": "color(var(--background) l(8%))",
-        "dark_gray-darkest": "color(var(--background) l(4%))",
+        "dark_gray": "color(var(--background) l(6%))",
+        "dark_gray-darkest": "color(var(--background) l(2%))",
 
         // Labels
         "label_color": "var(text-heading)",
@@ -61,12 +61,12 @@
         "location_bar_fg": "var(text)",
         "location_bar_heading_fg": "var(text-heading)",
         "location_bar_heading_shadow": "black",
-        "location_bar_row_bg-hover": "var(--background)",
+        "location_bar_row_bg-hover": "color(var(--background) l(+ 10%))",
         "disclosure_fg": "var(text)",
 
         // Commit list
         "commit_list_bg": "var(dark_gray-lightest)",
-        "commit_row_bg-hover": "color(var(dark_gray-lightest) l(22%))",
+        "commit_row_bg-hover": "color(var(dark_gray-lightest) l(+ 10%))",
         "commit_summary_fg-primary": "var(text-heading)",
         "commit_summary_fg-secondary": "var(text)",
 
@@ -181,15 +181,15 @@
 
         // Dialogs
         "dialog_bg": "var(dark_gray-light)",
-        "dialog_button_bg": "var(medium_gray)",
+        "dialog_button_bg": "color(var(--foreground) a(20%))",
 
         // Progress bar
         "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
         "progress_fg": "color(var(medium_gray) a(0.5))",
 
         // Quick panel
-        "quick_panel_bg": "var(dark_gray-light)",
-        "quick_panel_row_bg": "var(dark_gray)",
+        "quick_panel_bg": "var(dark_gray-lightest)",
+        "quick_panel_row_bg": "color(var(dark_gray-lightest) l(+ 10%))",
         "quick_panel_fg": "var(text)",
         "quick_panel_fg-match": "var(text-heading)",
         "quick_panel_fg-selected": "var(text)",
@@ -200,7 +200,7 @@
         "quick_panel_path_fg-selected-match": "var(text-heading)",
 
         // Switch repository window
-        "switch_repo_bg": "var(dark_gray-light)",
+        "switch_repo_bg": "var(dark_gray-lightest)",
 
         // Hints
         "failed_label_fg": "var(dark_gray)",
