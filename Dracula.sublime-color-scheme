@@ -1,0 +1,416 @@
+{
+	"name": "Dracula (Classic)",
+	"author": "Isaac Muse",
+	"comments": "Derivation of: Dracula (Zeno Rocha) and Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski)",
+	"globals":
+	{
+		"active_guide": "color(var(accent) a(75%))",
+		"background": "var(background)",
+		"bracket_contents_foreground": "color(var(foreground) alpha(0.65))",
+		"bracket_contents_options": "underline",
+		"brackets_foreground": "color(var(foreground) alpha(0.65))",
+		"brackets_options": "underline",
+		"caret": "var(caret)",
+		"gutter_foreground": "var(accent)",
+		"block_caret": "var(block-caret)",
+		"find_highlight": "var(highlight)",
+		"find_highlight_foreground": "var(background)",
+		"foreground": "var(foreground)",
+		"highlight": "var(cyan)",
+		"inactive_selection": "var(selection)",
+		"line_highlight": "var(selection)",
+		"misspelling": "var(red)",
+		"selection": "var(selection)",
+		"selection_border": "color(var(selection) lightness(35%))",
+		"shadow": "color(var(shadow) alpha(0.25))",
+		"stack_guide": "color(var(foreground) a(25%))",
+		"tags_foreground": "var(pink)",
+		"tags_options": "stippled_underline",
+		"invisibles": "color(var(foreground) a(20%))",
+		"accent": "var(accent)"
+	},
+	"rules":
+	[
+		{
+			"foreground": "var(comment)",
+			"name": "Comment",
+			"scope": "comment, punctuation.definition.comment"
+		},
+		{
+			"foreground": "var(yellow)",
+			"name": "String",
+			"scope": "string"
+		},
+		{
+			"foreground": "var(purple)",
+			"name": "Punctuation",
+			"scope": "punctuation.definition"
+		},
+		{
+			"foreground": "var(purple)",
+			"name": "Number",
+			"scope": "constant.numeric"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(purple)",
+			"name": "Built-in constant",
+			"scope": "constant.language"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "User-defined constant",
+			"scope": "constant.character, constant.other"
+		},
+		{
+			"foreground": "var(red)",
+			"name": "Member Variable",
+			"scope": "variable.member"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "Keyword",
+			"scope": "keyword - keyword.operator, keyword.operator.word"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "Operators",
+			"scope": "keyword.operator"
+		},
+		{
+			"foreground": "var(foreground)",
+			"name": "Punctuation",
+			"scope": "punctuation.separator, punctuation.terminator"
+		},
+		{
+			"foreground": "var(foreground)",
+			"name": "Punctuation",
+			"scope": "punctuation.section"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "Accessor",
+			"scope": "punctuation.accessor"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "Annotation Punctuation",
+			"scope": "punctuation.definition.annotation"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "JavaScript Dollar",
+			"scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js"
+		},
+		{
+			"foreground": "var(red)",
+			"name": "Storage",
+			"scope": "storage"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(cyan)",
+			"name": "Storage type",
+			"scope": "storage.type"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "Entity name",
+			"scope": "entity.name.function"
+		},
+		{
+			"foreground": "var(cyan)",
+			"name": "Entity name",
+			"scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)"
+		},
+		{
+			"font_style": "italic underline",
+			"foreground": "var(cyan)",
+			"name": "Inherited class",
+			"scope": "entity.other.inherited-class"
+		},
+		{
+			"foreground": "var(orange)",
+			"name": "Function argument",
+			"scope": "variable.parameter"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(purple)",
+			"name": "Language variable",
+			"scope": "variable.language"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "Tag name",
+			"scope": "entity.name.tag"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "Tag attribute",
+			"scope": "entity.other.attribute-name"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "Function call",
+			"scope": "variable.function, variable.annotation"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(cyan)",
+			"name": "Library function",
+			"scope": "support.function, support.macro"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(pink)",
+			"name": "Library constant",
+			"scope": "support.constant"
+		},
+		{
+			"font_style": "italic",
+			"foreground": "var(cyan)",
+			"name": "Library class/type",
+			"scope": "support.type, support.class"
+		},
+		{
+			"background": "var(pink)",
+			"foreground": "var(foreground)",
+			"name": "Invalid",
+			"scope": "invalid"
+		},
+		{
+			"background": "var(orange)",
+			"foreground": "var(foreground)",
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "YAML Key",
+			"scope": "entity.name.tag.yaml"
+		},
+		{
+			"foreground": "var(foreground)",
+			"name": "YAML String",
+			"scope": "source.yaml string.unquoted"
+		},
+		{
+			"font_style": "bold",
+			"name": "markup headings",
+			"scope": "markup.heading"
+		},
+		{
+			"foreground": "var(orange)",
+			"name": "markup headings",
+			"scope": "markup.heading punctuation.definition.heading"
+		},
+		{
+			"foreground": "var(red)",
+			"name": "markup h1",
+			"scope": "markup.heading.1 punctuation.definition.heading"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "markup links",
+			"scope": "string.other.link, markup.underline.link"
+		},
+		{
+			"font_style": "bold",
+			"name": "markup bold",
+			"scope": "markup.bold"
+		},
+		{
+			"font_style": "italic",
+			"name": "markup italic",
+			"scope": "markup.italic"
+		},
+		{
+			"font_style": "bold italic",
+			"name": "markup bold/italic",
+			"scope": "markup.italic markup.bold | markup.bold markup.italic"
+		},
+		{
+			"foreground": "var(yellow)",
+			"name": "markup hr",
+			"scope": "punctuation.definition.thematic-break"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "markup numbered list bullet",
+			"scope": "markup.list.numbered.bullet"
+		},
+		{
+			"foreground": "var(yellow)",
+			"name": "markup blockquote",
+			"scope": "markup.quote punctuation.definition.blockquote, markup.list punctuation.definition.list_item"
+		},
+		{
+			"background": "color(var(background) lightness(- 2%))",
+			"name": "markup code",
+			"scope": "markup.raw"
+		},
+		{
+			"background": "color(var(background) lightness(- 3%))",
+			"name": "markup code",
+			"scope": "markup.raw.inline"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "markup punctuation",
+			"scope": "(text punctuation.definition.italic | text punctuation.definition.bold)"
+		},
+		{
+			"foreground": "var(comment)",
+			"name": "diff.header",
+			"scope": "meta.diff, meta.diff.header"
+		},
+		{
+			"foreground": "var(pink)",
+			"name": "diff.deleted",
+			"scope": "markup.deleted"
+		},
+		{
+			"foreground": "var(green)",
+			"name": "diff.inserted",
+			"scope": "markup.inserted"
+		},
+		{
+			"foreground": "var(yellow)",
+			"name": "diff.changed",
+			"scope": "markup.changed"
+		},
+		{
+			"foreground": "var(foreground)",
+			"name": "CSS Properties",
+			"scope": "support.type.property-name"
+		},
+		{
+			"foreground": "var(red)",
+			"scope": "constant.numeric.line-number.match"
+		},
+		{
+			"foreground": "var(red)",
+			"scope": "message.error"
+		},
+		{
+			"background": "color(var(pink) alpha(0.15))",
+			"foreground_adjust": "l(+ 5%)",
+			"scope": "diff.deleted"
+		},
+		{
+			"background": "color(var(pink) alpha(0.30))",
+			"foreground_adjust": "l(+ 10%)",
+			"scope": "diff.deleted.char"
+		},
+		{
+			"background": "color(var(green) alpha(0.15))",
+			"foreground_adjust": "l(+ 5%)",
+			"scope": "diff.inserted"
+		},
+		{
+			"background": "color(var(green) alpha(0.30))",
+			"foreground_adjust": "l(+ 10%)",
+			"scope": "diff.inserted.char"
+		},
+		{
+			"scope": "diff.deleted.side-by-side",
+			"background": "color(var(background) lightness(+ 5%))",
+			"foreground_adjust": "l(+ 5%)"
+		},
+		{
+			"scope": "diff.inserted.side-by-side",
+			"background": "color(var(background) lightness(+ 5%))",
+			"foreground_adjust": "l(+ 5%)"
+		},
+		{
+			"scope": "diff.fill",
+			"background": "color(var(background) lightness(+ 5%))"
+		},
+		{
+			"scope": "diff.inserted.merge-left",
+			"background": "color(var(green) alpha(0.15))",
+			"foreground_adjust": "l(+ 5%)"
+		},
+		{
+			"scope": "diff.inserted.char.merge-left",
+			"background": "color(var(green) alpha(0.30))",
+			"foreground_adjust": "l(+ 10%)"
+		},
+		{
+			"scope": "diff.border.merge-left",
+			"background": "color(var(green) alpha(0.50))",
+		},
+		{
+			"scope": "diff.inserted.merge-right",
+			"background": "color(var(yellow) alpha(0.15))",
+			"foreground_adjust": "l(+ 5%)"
+		},
+		{
+			"scope": "diff.inserted.char.merge-right",
+			"background": "color(var(yellow) alpha(0.30))",
+			"foreground_adjust": "l(+ 10%)"
+		},
+		{
+			"scope": "diff.border.merge-right",
+			"background": "color(var(yellow) alpha(0.50))",
+		},
+		{
+			"scope": "diff.border.merge-conflict",
+			"background": "color(var(red) alpha(0.50))",
+		},
+		{
+			"scope": "diff.border.merge-merged",
+			"background": "color(var(purple) alpha(0.50))",
+		},
+		{
+			"scope": "blame.border",
+			"background": "color(var(background) lightness(+ 15%))",
+		},
+		{
+			"scope": "blame.age-icon",
+			"foreground": "var(white)",
+		},
+		{
+			"scope": "source.sublime-merge.preferences.git_binary",
+			"foreground": "var(white)",
+		}
+	],
+	"variables":
+	{
+		// Palette
+		"white": "hsl(60, 30%, 96%)",
+		"red": "hsl(0, 100%, 67%)",
+		"orange": "hsl(31, 100%, 71%)",
+		"yellow": "hsl(65, 92%, 76%)",
+		"green": "hsl(135, 94%, 65%)",
+		"cyan": "hsl(191, 97%, 77%)",
+		"pink": "hsl(326, 100%, 74%)",
+		"purple": "hsl(265, 89%, 78%)",
+
+		// Create variants:
+		//
+		// This allows for theme specific variants like what is
+		// possible for Dracula Pro. This scheme was developed
+		// separately from Pro, and I do not own, nor have seen Pro's source.
+		// We purposefully use the classic palette and not Pro's as we do not wish
+		// to take away from the author's work. But this allows you to create Pro style
+		// variants for classic:
+		//
+		//   - Change background to a suitable color and line highlights and accent
+		//     colors will change accordingly.
+		//   - Pro also changes comments based on background, if you'd like something more
+		//     pro-ish, change comment's value to var(accent).
+		"background": "hsl(231, 15%, 18%)",
+		"comment": "hsl(225, 27%, 51%)",
+
+		// UI elements derived from color schemes
+		"foreground": "var(white)",
+		"caret": "var(accent)",
+		"block-caret": "var(accent)",
+		"selection": "color(var(background) s(14%) l(25%))",
+		"highlight": "var(yellow)",
+		"shadow": "hsl(0, 0%, 0%)",
+		"accent": "color(var(background) s(30%) l(60%))"
+	}
+}
