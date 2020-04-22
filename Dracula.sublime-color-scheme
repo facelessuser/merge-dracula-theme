@@ -400,15 +400,16 @@
 		//   - Change background to a suitable color and line highlights and accent
 		//     colors will change accordingly.
 		//   - Pro also changes comments based on background, if you'd like something more
-		//     pro-ish, change comment's value to var(accent).
+		//     pro-ish, change comment's value to var(accent). And change selection to
+		//     color(var(background) s(15%) l(30%))
 		"background": "hsl(231, 15%, 18%)",
 		"comment": "hsl(225, 27%, 51%)",
+		"selection": "hsl(232, 14%, 31%)",
 
 		// UI elements derived from color schemes
 		"foreground": "var(white)",
 		"caret": "var(accent)",
 		"block-caret": "var(accent)",
-		"selection": "color(var(background) s(14%) l(25%))",
 		"highlight": "var(yellow)",
 		"shadow": "hsl(0, 0%, 0%)",
 		"accent": "color(var(background) s(30%) l(60%))"
