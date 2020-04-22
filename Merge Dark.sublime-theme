@@ -230,6 +230,14 @@
     "rules":
     [
         {
+            "class": "tool_tip_label_control",
+            "color": "var(--background)"
+        },
+        {
+            "class": "tool_tip_control",
+            "layer0.tint": "color(var(--accent))"
+        },
+        {
             "class": "tab_close_button",
             "layer0.texture": "Theme - Default/common/dark/tab_close.png",
         },
