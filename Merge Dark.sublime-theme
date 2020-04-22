@@ -235,7 +235,7 @@
         },
         {
             "class": "tool_tip_control",
-            "layer0.tint": "color(var(--accent))"
+            "layer0.tint": "color(var(--accent) s(50%) l(75%))"
         },
         {
             "class": "tab_close_button",
