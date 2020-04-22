@@ -26,7 +26,7 @@
 		"stack_guide": "color(var(foreground) a(25%))",
 		"tags_foreground": "var(pink)",
 		"tags_options": "stippled_underline",
-		"invisibles": "color(var(foreground) a(20%))",
+		"invisibles": "color(var(background) l(+ 20%))",
 		"accent": "var(accent)"
 	},
 	"rules":
