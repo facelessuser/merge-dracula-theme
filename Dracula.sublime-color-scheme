@@ -124,7 +124,7 @@
 			"scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)"
 		},
 		{
-			"font_style": "italic underline",
+			"font_style": "italic",
 			"foreground": "var(cyan)",
 			"name": "Inherited class",
 			"scope": "entity.other.inherited-class"
@@ -387,6 +387,16 @@
 		"cyan": "hsl(191, 97%, 77%)",
 		"pink": "hsl(326, 100%, 74%)",
 		"purple": "hsl(265, 89%, 78%)",
+
+		// Sublime has difficulty detecting purplish from bluish, so define all to avoid detection
+		"--redish": "var(red)",
+		"--orangeish": "var(orange)",
+		"--yellowish": "var(yellow)",
+		"--greenish": "var(green)",
+		"--cyanish": "var(cyan)",
+		"--bluish": "var(blue)",
+		"--pinkish": "var(pink)",
+		"--purplish": "var(purple)",
 
 		// Create variants:
 		//
