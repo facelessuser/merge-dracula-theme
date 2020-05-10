@@ -23,3 +23,6 @@ Merge looks for color schemes (`.sublime-color-scheme`) in Sublime Text installs
 contain the required Merge specific rules, they should work fine. So if you were using the color scheme in this package
 already in Sublime Text, Merge would find it and use it making the inclusion here unnecessary, but it is included here
 as a convenience.
+
+To use the color schemes from Sublime Text, you'd have to change the above mentioned settings files under
+[Install](#install) to match the packages path in Sublime Text.
