@@ -1,6 +1,6 @@
 # merge-dracula-theme
 
-[Dracula](https://draculatheme.com/) theme for Sublime Merge.
+[Dracula](https://draculatheme.com/) theme for Sublime Merge 2 (may or may not work on Sublime Merge 1).
 
 ![Sublime Merge](./sublime_merge.png)
 
@@ -18,5 +18,8 @@ If you are overriding the color scheme in your `User` folder in any of these fil
 
 ## Notes
 
-Theme has only been tested on Sublime Merge 2.0+. This is a first pass, and there are surely some controls that got
-missed or improvements that could be made.
+We do not actually have to include the color scheme in this package if you were using the color scheme in Sublime Text.
+Merge looks for color schemes (`.sublime-color-scheme`) in Sublime Text installs and uses those in Merge. Assuming they
+contain the required Merge specific rules, they should work fine. So if you were using the color scheme in this package
+already in Sublime Text, Merge would find it and use it making the inclusion here unnecessary, but it is included here
+as a convenience.
