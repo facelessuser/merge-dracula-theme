@@ -93,23 +93,23 @@
         "terminator_fg": "var(medium_gray)",
 
         // Annotations
-        "head_ann_fg": "var(dark_gray)",
+        "head_ann_fg": "var(--background)",
         "head_ann_bg": "var(purple)",
 
-        "branch_ann_fg": "var(dark_gray)",
+        "branch_ann_fg": "var(--background)",
         "branch_ann_bg": "var(cyan)",
 
-        "remote_ann_fg": "var(dark_gray)",
+        "remote_ann_fg": "var(--background)",
         "remote_ann_bg": "var(green)",
 
-        "tag_ann_fg": "var(dark_gray)",
+        "tag_ann_fg": "var(--background)",
         "tag_ann_bg": "var(yellow)",
 
-        "stash_ann_fg": "var(dark_gray)",
+        "stash_ann_fg": "var(--background)",
         "stash_ann_bg": "var(orange)",
 
-        "file_ann_fg": "var(text)",
-        "file_ann_bg": "color(var(medium_gray) a(- 75%))",
+        "file_ann_fg": "var(--foreground)",
+        "file_ann_bg": "color(var(--foreground) a(0.2))",
 
         "submodule_ann_bg": "var(dark_gray-lightest)",
         "submodule_light_ann_bg": "var(dark_gray-lightest)",
@@ -338,6 +338,24 @@
             "line_selection_border_color": "color(var(blue) alpha(0.5))",
             "line_selection_border_width": 2.0,
             "line_selection_border_radius": 2.0,
+        },
+        {
+            "class": "branch_stat",
+            "layer0.tint": "color(var(--foreground) a(0.2))",
+        },
+        {
+            "class": "branch_stat_label",
+            "color": "var(--foreground)"
+        },
+        {
+            "class": "icon_behind",
+            "layer0.opacity": 1.0,
+            "layer0.tint": "var(pink)",
+        },
+        {
+            "class": "icon_ahead",
+            "layer0.opacity": 1.0,
+            "layer0.tint": "var(green)",
         },
         {
             "class": "blame_text_control",
