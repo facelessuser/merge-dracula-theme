@@ -6,15 +6,12 @@
 
 ## Install
 
-Git clone project or download into your Sublime Merge `Packages` folder. Restart Sublime or toggle between light and
-dark theme to force assets to reload. Sublime Merge theme must be set to `Merge Dark`.
+Git clone project or download into your Sublime Merge `Packages` folder. Edit your merge `Preferences.sublime-settings`
+file to use the Dracula theme:
 
-If you are overriding the color scheme in your `User` folder in any of these files, you must remove your override:
-
-- `Commit Message - Merge Dark.sublime-settings`
-- `Diff - Merge Dark.sublime-settings`
-- `File Mode - Merge Dark.sublime-settings`
-- `Widget - Merge Dark.sublime-settings`
+```js
+    "theme": "Dracula.sublime-settings"
+```
 
 ## Notes
 
@@ -23,6 +20,3 @@ Merge looks for color schemes (`.sublime-color-scheme`) in Sublime Text installs
 contain the required Merge specific rules, they should work fine. So if you were using the color scheme in this package
 already in Sublime Text, Merge would find it and use it making the inclusion here unnecessary, but it is included here
 as a convenience.
-
-To use the color schemes from Sublime Text, you'd have to change the above mentioned settings files under
-[Install](#install) to match the packages path in Sublime Text.
