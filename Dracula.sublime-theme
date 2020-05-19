@@ -20,11 +20,11 @@
         "medium_gray-light": "color(var(--background) l(48%))",
         "medium_gray": "color(var(--background) l(58%))",
         "medium_gray-dark": "color(var(--background) l(38%))",
-        "dark_gray-lightest": "color(var(--background) s(25%) l(25%))",
-        "dark_gray-light": "color(var(--background) s(25%) l(20%))",
-        "dark_gray": "color(var(--background) s(25%) l(15%))",
-        "dark_gray-dark": "color(var(--background) s(25%) l(10%))",
-        "dark_gray-darkest": "color(var(--background) s(23%) l(5%))",
+        "dark_gray-lightest": "color(var(--background) s(20%) l(25%))",
+        "dark_gray-light": "color(var(--background) s(20%) l(20%))",
+        "dark_gray": "color(var(--background) s(20%) l(15%))",
+        "dark_gray-dark": "color(var(--background) s(20%) l(10%))",
+        "dark_gray-darkest": "color(var(--background) s(18%) l(5%))",
 
         // Labels
         "label_color": "var(text-heading)",
