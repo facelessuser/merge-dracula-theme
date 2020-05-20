@@ -1,0 +1,398 @@
+{
+    "extends": "Merge.sublime-theme",
+    "variables":
+    {
+        "text-heading": "hsl(0, 0%, 95%)",
+        "text": "hsla(0, 0%, 95%, 0.7)",
+
+        "red": "var(--redish)",
+        "orange": "var(--orangish)",
+        "yellow": "var(--yellowish)",
+        "green": "var(--greenish)",
+        "cyan": "var(--cyanish)",
+        "blue": "var(--bluish)",
+        "pink": "var(--pinkish)",
+        "purple": "var(--purplish)",
+
+        "dark_red": "color(var(red) s(25%) l(35%))",
+        "dark_blue": "color(var(blue) s(25%) l(35%))",
+
+        "medium_gray-light": "color(var(--background) l(48%))",
+        "medium_gray": "color(var(--background) l(58%))",
+        "medium_gray-dark": "color(var(--background) l(38%))",
+        "dark_gray-lightest": "color(var(--background) s(20%) l(25%))",
+        "dark_gray-light": "color(var(--background) s(20%) l(20%))",
+        "dark_gray": "color(var(--background) s(20%) l(15%))",
+        "dark_gray-dark": "color(var(--background) s(20%) l(10%))",
+        "dark_gray-darkest": "color(var(--background) s(18%) l(5%))",
+
+        // Labels
+        "label_color": "var(text-heading)",
+        "help_label_color": "color(var(text-heading) a(0.6))",
+
+        // Header
+        "title_bar_style": "dark",
+        "header_bg": "var(dark_gray-dark)",
+        "header_fg": "var(text-heading)",
+        "header_button_bg": "color(var(--background) l(25%))",
+        "icon_button_fg": "white",
+
+        "info_shadow": "color(black a(0.2))",
+
+        "diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
+        "diverged_button_bg": "var(button_bg)",
+        "diverged_button_fg": "var(--background)",
+
+        // Scroll shadow
+        "scroll_shadow": "color(black a(0.3))",
+
+        // Focus highlight
+        "focus_highlight_color": "var(text)",
+
+        // Welcome overlay
+        "welcome_bg": "var(dark_gray-light)",
+        "recent_repositories_row_bg-hover": "color(var(dark_gray-light) l(+ 10%))",
+
+        // Preferences Page
+        "preferences_overlay_bg": "var(dark_gray-dark)",
+        "preferences_section_table_bg": "var(dark_gray-light)",
+
+        // Side bar
+        "location_bar_fg": "var(text)",
+        "location_bar_heading_fg": "var(text-heading)",
+        "location_bar_heading_shadow": "black",
+        "location_bar_row_bg-hover": "color(var(dark_gray) l(+ 10%))",
+        "disclosure_fg": "var(text)",
+
+        // Commit list
+        "commit_list_bg": "var(dark_gray-light)",
+        "commit_row_bg-hover": "color(var(dark_gray-light) l(+ 10%))",
+        "commit_summary_fg-primary": "var(text-heading)",
+        "commit_summary_fg-secondary": "var(text)",
+
+        "commit_edge_0": "var(cyan)",
+        "commit_edge_1": "var(purple)",
+        "commit_edge_2": "var(magenta)",
+        "commit_edge_3": "var(orange)",
+        "commit_edge_4": "var(yellow)",
+        "commit_edge_5": "var(green)",
+
+        // Location Bar
+        "side_bar_container_bg": "var(dark_gray)",
+
+        // Table of Contents
+        "table_of_contents_bg": "var(dark_gray)",
+        "table_of_contents_fg": "var(text)",
+        "table_of_contents_heading_fg": "var(text-heading)",
+        "table_of_contents_row_bg": "color(var(dark_gray) l(+ 30%))",
+
+        // Detail panel
+        "detail_panel_bg": "var(--background)",
+        "field_name_fg": "var(text)",
+        "author_fg": "color(var(--foreground) a(0.4))",
+        "terminator_fg": "var(medium_gray)",
+
+        // Annotations
+        "head_ann_fg": "var(--background)",
+        "head_ann_bg": "var(purple)",
+
+        "branch_ann_fg": "var(--background)",
+        "branch_ann_bg": "var(cyan)",
+
+        "remote_ann_fg": "var(--background)",
+        "remote_ann_bg": "var(green)",
+
+        "tag_ann_fg": "var(--background)",
+        "tag_ann_bg": "var(yellow)",
+
+        "stash_ann_fg": "var(--background)",
+        "stash_ann_bg": "var(orange)",
+
+        "file_ann_fg": "var(text)",
+        "file_ann_bg": "color(var(--foreground) a(0.2))",
+
+        "submodule_ann_fg": "var(text)",
+        "submodule_ann_bg": "color(var(--foreground) a(20%))",
+        "submodule_light_ann_fg": "var(text)",
+        "submodule_light_ann_bg": "color(var(--foreground) a(20%))",
+
+        "inserted_ann_bg": "color(var(green) a(- 50%))",
+        "deleted_ann_bg": "color(var(magenta) a(- 50%))",
+
+        // Diff headers
+        "file_diff_shadow": "color(black a(0.5))",
+        "file_icon_bg": "color(var(text) a(0.2))",
+
+        "hunk_button_fg": "white",
+        "hunk_button_shadow": "color(black a(0.5))",
+
+        "file_header_bg": "color(var(--background) s(+ 5%) l(+ 5%))",
+        "file_header_bg-hover": "color(var(--background) s(+ 5%) l(+ 8%))",
+
+        "hunk_header_bg": "color(var(--background) s(+ 5%) l(+ 11%))",
+
+        "deleted_icon_fg": "var(text)",
+        "deleted_header_bg": "var(dark_red)",
+        "deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
+
+        "unmerged_icon_fg": "var(text)",
+        "unmerged_header_bg": "var(dark_blue)",
+        "unmerged_header_bg-hover": "color(var(dark_blue) l(+ 5%))",
+
+        "recent_icon_fg": "var(yellow)",
+        "recent_icon_bg": "transparent",
+        "untracked_header_bg": "color(var(--background) l(+ 5%))",
+        "untracked_header_bg-hover": "color(var(--background) l(+ 8%))",
+
+        "staged_icon_fg": "var(text)",
+
+        "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
+        "renamed_file_deleted": "color(var(red) s(50%) l(65%))",
+
+        // Blame
+        "blame_popup_bg": "color(var(--background) l(+ 10%))",
+
+        // Buttons
+        "button_bg": "color(var(--foreground) a(20%))",
+        "button_fg": "var(label_color)",
+        "button_shadow": "color(black a(0.5))",
+
+        "highlighted_button_light_bg": "color(hsl(84, 35%, 50%))",
+        "highlighted_button_light_fg": "var(label_color)",
+        "highlighted_button_dark_bg": "color(hsl(83, 40%, 44%))",
+        "highlighted_button_dark_fg": "var(label_color)",
+        "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
+
+        "toggle_button_bg": "color(var(--foreground) a(20%))", // This matches the header hover buttons
+        "toggle_button_fg": "var(text)",
+        "toggle_button_fg_selected": "var(text-heading)",
+
+        // Tabs
+        "tab_bar_bg": "var(dark_gray-dark)",
+        "tab_separator_bg": "var(dark_gray-light)",
+
+        // Radio buttons
+        "radio_back": "var(--background)",
+        "radio_selected": "var(--accent)",
+        "radio_border-selected": "var(--accent)",
+
+        // Checkbox buttons
+        "checkbox_back": "var(--background)",
+        "checkbox_selected": "var(--accent)",
+        "checkbox_border-selected": "var(--accent)",
+
+        // Dialogs
+        "dialog_bg": "var(dark_gray-dark)",
+        "dialog_button_bg": "color(var(--foreground) a(20%))",
+
+        // Progress bar
+        "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
+        "progress_fg": "color(var(medium_gray) a(0.5))",
+
+        // Quick panel
+        "quick_panel_bg": "var(dark_gray-light)",
+        "quick_panel_row_bg": "color(var(dark_gray-light) l(+ 10%))",
+        "quick_panel_fg": "var(text)",
+        "quick_panel_fg-match": "var(text-heading)",
+        "quick_panel_fg-selected": "var(text)",
+        "quick_panel_fg-selected-match": "var(text-heading)",
+        "quick_panel_path_fg": "var(text)",
+        "quick_panel_path_fg-match": "var(text-heading)",
+        "quick_panel_path_fg-selected": "var(text)",
+        "quick_panel_path_fg-selected-match": "var(text-heading)",
+
+        // Switch repository window
+        "switch_repo_bg": "var(dark_gray-light)",
+
+        // Hints
+        "failed_label_fg": "var(--background)",
+
+        // Loading
+        "loading_ball_1": "var(pink)",
+        "loading_ball_2": "var(green)",
+
+        // Command Palette
+        "preview_fg": "white",
+
+        // Merge Helper
+        "merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
+        "console_border": "color(var(dark_gray-light) l(20%))",
+
+        // Tabs
+        "repository_tab_bar_bg": "var(dark_gray-darkest)",
+        "repository_tab_bar_border_bg": "var(medium_gray)",
+
+        "file_badge_modified_fg": "var(medium_gray)",
+        "file_badge_unmerged_fg": "var(medium_gray)",
+        "file_badge_untracked_bg": "var(file_header_bg)",
+        "file_badge_untracked_fg": "var(medium_gray-dark)",
+        "file_badge_staged_bg": "var(file_header_bg)",
+        "file_badge_staged_fg": "var(medium_gray-light)",
+    },
+    "rules":
+    [
+        {
+            "class": "tool_tip_label_control",
+            "color": "var(--background)"
+        },
+        {
+            "class": "tool_tip_control",
+            "layer0.tint": "color(var(--accent) s(50%) l(75%))"
+        },
+        {
+            "class": "tab_close_button",
+            "layer0.texture": "Theme - Default/common/dark/tab_close.png",
+        },
+        {
+            "class": "icon_folder",
+            "layer0.texture": "Theme - Default/common/dark/folder_closed.png",
+        },
+        {
+            "class": "info_area",
+            "layer0.opacity": 0.2,
+            "layer0.tint": "var(medium_gray)",
+        },
+        {
+            "class": "info_area",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.3,
+        },
+        {
+            "class": "location_bar_heading",
+            "color": "var(location_bar_heading_fg)",
+        },
+        {
+            "class": "table_of_contents_heading",
+            "color": "var(table_of_contents_heading_fg)",
+        },
+        {
+            "class": "branch_table",
+            "dark_content": true
+        },
+        {
+            "class": "commit_table",
+            "dark_content": true
+        },
+        {
+            "class": "scroll_track_control",
+            "parents": [{"class": "commit_table_container"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        },
+        {
+            "class": "puck_control",
+            "parents": [{"class": "commit_table_container"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        },
+
+        {
+            "class": "scroll_track_control",
+            "parents": [{"class": "side_bar_container"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        },
+        {
+            "class": "puck_control",
+            "parents": [{"class": "side_bar_container"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        },
+        {
+            "class": "scroll_track_control",
+            "parents": [{"class": "details_panel"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        },
+        {
+            "class": "puck_control",
+            "parents": [{"class": "details_panel"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_puck.png"
+        },
+        {
+            "class": "scroll_track_control",
+            "parents": [{"class": "overlay_control"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        },
+        {
+            "class": "puck_control",
+            "parents": [{"class": "overlay_control"}],
+            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        },
+        {
+            "class": "text_line_control",
+            "layer0.tint": "var(--background)"
+        },
+        {
+            "class": "search_text_control",
+            "layer0.tint": "var(--background)"
+        },
+        {
+            "class": "search_help",
+            "headline_color": "color(var(--foreground) l(- 10%))",
+        },
+        {
+            "class": "quick_panel_label hint",
+            "color": "color(var(--foreground) a(- 50%))"
+        },
+        {
+            "class": "quick_panel_label key_binding",
+            "color": "color(var(--foreground) a(- 50%))"
+        },
+        {
+            "class": "diff_text_control",
+            "line_selection_color": "color(var(blue) alpha(0.05))",
+            "line_selection_border_color": "color(var(blue) alpha(0.5))",
+            "line_selection_border_width": 2.0,
+            "line_selection_border_radius": 2.0,
+        },
+        {
+            "class": "branch_stat",
+            "layer0.tint": "color(var(--foreground) a(0.2))",
+        },
+        {
+            "class": "branch_stat_label",
+            "color": "var(text)"
+        },
+        {
+            "class": "icon_behind",
+            "layer0.opacity": 1.0,
+            "layer0.tint": "var(pink)",
+        },
+        {
+            "class": "icon_ahead",
+            "layer0.opacity": 1.0,
+            "layer0.tint": "var(green)",
+        },
+        {
+            "class": "blame_text_control",
+            "settings": ["!kelly_colors"],
+            "num_colors": 8,
+            "color0": "var(blue)",
+            "color1": "var(purple)",
+            "color2": "var(magenta)",
+            "color3": "var(orange)",
+            "color4": "var(yellow)",
+            "color5": "var(green)",
+            "color6": "var(red)",
+            "color7": "var(blue)",
+        },
+        {
+            "class": "blame_text_control",
+            "settings": ["kelly_colors"],
+            "num_colors": 17,
+            "color0": "rgb(128, 62, 117)",
+            "color1": "rgb(166, 189, 215)",
+            "color2": "rgb(193, 0, 32)",
+            "color3": "rgb(206, 162, 98)",
+            "color4": "rgb(129, 112, 102)",
+            "color5": "rgb(0, 125, 52)",
+            "color6": "rgb(246, 118, 142)",
+            "color7": "rgb(0, 83, 138)",
+            "color8": "rgb(255, 122, 92)",
+            "color9": "rgb(255, 142, 0)",
+            "color10": "rgb(179, 40, 81)",
+            "color11": "rgb(244, 200, 0)",
+            "color12": "rgb(127, 24, 13)",
+            "color13": "rgb(147, 170, 0)",
+            "color14": "rgb(89, 51, 21)",
+            "color15": "rgb(241, 58, 19)",
+            "color16": "rgb(244, 244, 244)",
+        },
+    ]
+}
