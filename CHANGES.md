@@ -3,6 +3,7 @@
 ## Dev
 
 - **NEW**: Theme image diffs (Merge Build 2024).
+- **NEW**: Better badge color for file states.
 
 ## 1.1.0
 
