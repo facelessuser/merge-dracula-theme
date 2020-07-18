@@ -201,6 +201,10 @@
         "quick_panel_path_fg-selected": "var(text)",
         "quick_panel_path_fg-selected-match": "var(text-heading)",
 
+        // Image Diffs
+        "image_diff_checkerboard_alt_bg": "color(var(--background) l(+ 10%))",
+        "image_metadata_label_bg": "color(var(--foreground) a(20%))",
+
         // Switch repository window
         "switch_repo_bg": "var(dark_gray-light)",
 
