@@ -573,6 +573,15 @@
             "layer0.tint": "var(file_badge_deleted_fg)"
         },
         {
+            "class": "icon_unmerged",
+            "parents": [
+                {
+                    "class": "unmerged_badge"
+                }
+            ],
+            "layer0.tint": "var(file_badge_unmerged_fg)"
+        },
+        {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
             "fg": "var(--foreground)"
