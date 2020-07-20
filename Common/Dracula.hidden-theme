@@ -20,8 +20,8 @@
         "medium_gray-light": "color(var(--background) l(48%))",
         "medium_gray": "color(var(--background) l(58%))",
         "medium_gray-dark": "color(var(--background) l(38%))",
-        "dark_gray-lightest": "color(var(--background) s(20%) l(25%))",
-        "dark_gray-light": "color(var(--background) s(20%) l(20%))",
+        "dark_gray-lightest": "color(var(--background) s(20%) l(27%))",
+        "dark_gray-light": "color(var(--background) s(20%) l(22%))",
         "dark_gray": "color(var(--background) s(20%) l(15%))",
         "dark_gray-dark": "color(var(--background) s(20%) l(10%))",
         "dark_gray-darkest": "color(var(--background) s(18%) l(5%))",
@@ -61,7 +61,7 @@
         "location_bar_fg": "var(text)",
         "location_bar_heading_fg": "var(text-heading)",
         "location_bar_heading_shadow": "black",
-        "location_bar_row_bg-hover": "color(var(dark_gray) l(+ 10%))",
+        "location_bar_row_bg-hover": "color(var(dark_gray-lightest) l(+ 5%))",
         "disclosure_fg": "var(text)",
 
         // Commit list
@@ -78,7 +78,7 @@
         "commit_edge_5": "var(green)",
 
         // Location Bar
-        "side_bar_container_bg": "var(dark_gray)",
+        "side_bar_container_bg": "var(dark_gray-lightest)",
 
         // Table of Contents
         "table_of_contents_bg": "var(dark_gray)",
@@ -186,7 +186,7 @@
         "dialog_button_bg": "color(var(--foreground) a(20%))",
 
         // Progress bar
-        "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
+        "progress_bg": "var(dark_gray-lightest)",
         "progress_fg": "color(var(medium_gray) a(0.5))",
 
         // Quick panel
@@ -219,11 +219,11 @@
         "preview_fg": "white",
 
         // Merge Helper
-        "merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
-        "console_border": "color(var(dark_gray-light) l(20%))",
+        "merge_helper_highlight_bg": "var(dark_gray-lightest)",
+        "console_border": "var(dark_gray-light)",
 
         // Tabs
-        "repository_tab_bar_bg": "var(dark_gray-darkest)",
+        "repository_tab_bar_bg": "var(dark_gray-dark)",
         "repository_tab_bar_border_bg": "var(medium_gray)",
 
         "file_badge_created_fg": "var(green)",
@@ -589,6 +589,11 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected"]}],
+            "fg": "color(var(--foreground) a(0.3))"
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["!selected", "hover"]}],
             "fg": "color(var(--foreground) a(0.6))"
         },
         {
@@ -614,8 +619,28 @@
                     ]
                 }
             ],
+            "layer0.opacity": 0.3,
+            "layer0.tint": "var(--foreground)"
+        },
+
+        {
+            "class": "icon_folder",
+            "parents": [
+                {
+                    "class": "tab_control",
+                    "attributes": [
+                        "!selected",
+                        "hover"
+                    ]
+                }
+            ],
             "layer0.opacity": 0.6,
             "layer0.tint": "var(--foreground)"
         },
+
+        {
+            "class": "tab_control",
+            "layer1.opacity": 0,
+        }
     ]
 }

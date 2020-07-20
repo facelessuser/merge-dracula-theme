@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+- **NEW**: Change how repository tab bar is styled.
+- **NEW**: Sidebar contrast tweaks.
+- **NEW**: Minor color tweaks.
+
 ## 1.2.0
 
 - **NEW**: Theme image diffs (Merge Build 2024).
