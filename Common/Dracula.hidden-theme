@@ -14,6 +14,8 @@
         "pink": "var(--pinkish)",
         "purple": "var(--purplish)",
 
+        // Alias for pink
+        "magenta": "var(pink)",
         "dark_red": "color(var(red) s(25%) l(35%))",
         "dark_blue": "color(var(blue) s(25%) l(35%))",
 
@@ -72,7 +74,7 @@
 
         "commit_edge_0": "var(cyan)",
         "commit_edge_1": "var(purple)",
-        "commit_edge_2": "var(magenta)",
+        "commit_edge_2": "var(pink)",
         "commit_edge_3": "var(orange)",
         "commit_edge_4": "var(yellow)",
         "commit_edge_5": "var(green)",
@@ -117,7 +119,7 @@
         "submodule_light_ann_bg": "color(var(--foreground) a(20%))",
 
         "inserted_ann_bg": "color(var(green) a(- 50%))",
-        "deleted_ann_bg": "color(var(magenta) a(- 50%))",
+        "deleted_ann_bg": "color(var(pink) a(- 50%))",
 
         // Diff headers
         "file_diff_shadow": "color(black a(0.5))",
@@ -373,7 +375,7 @@
             "num_colors": 8,
             "color0": "var(blue)",
             "color1": "var(purple)",
-            "color2": "var(magenta)",
+            "color2": "var(pink)",
             "color3": "var(orange)",
             "color4": "var(yellow)",
             "color5": "var(green)",

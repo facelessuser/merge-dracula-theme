@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+- **FIX**: Fix bad `magenta` reference.
+
 ## 1.3.0
 
 - **NEW**: Change how repository tab bar is styled.
