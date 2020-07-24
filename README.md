@@ -1,13 +1,13 @@
 # merge-dracula-theme
 
-[Dracula](https://draculatheme.com/) theme for Sublime Merge 2 (may or may not work on Sublime Merge 1).
+[Dracula](https://draculatheme.com/) theme for Sublime Merge 2.
 
 ![Sublime Merge](./sublime_merge.png)
 
 ## Install
 
-Git clone project or download into your Sublime Merge `Packages` folder. Edit your merge `Preferences.sublime-settings`
-file to use the Dracula theme:
+Git clone project or download into your Sublime Merge `Packages` folder as `Theme - Dracula`. Edit your merge
+`Preferences.sublime-settings` file to use the Dracula theme:
 
 ```js
     "theme": "Dracula.sublime-settings"
