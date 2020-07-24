@@ -96,19 +96,19 @@
         "terminator_fg": "var(medium_gray)",
 
         // Annotations
-        "head_ann_fg": "var(--background)",
+        "head_ann_fg": "color(var(--background) a(0.7))",
         "head_ann_bg": "var(purple)",
 
-        "branch_ann_fg": "var(--background)",
+        "branch_ann_fg": "color(var(--background) a(0.7))",
         "branch_ann_bg": "var(cyan)",
 
-        "remote_ann_fg": "var(--background)",
+        "remote_ann_fg": "color(var(--background) a(0.7))",
         "remote_ann_bg": "var(green)",
 
-        "tag_ann_fg": "var(--background)",
+        "tag_ann_fg": "color(var(--background) a(0.7))",
         "tag_ann_bg": "var(yellow)",
 
-        "stash_ann_fg": "var(--background)",
+        "stash_ann_fg": "color(var(--background) a(0.7))",
         "stash_ann_bg": "var(orange)",
 
         "file_ann_fg": "var(text)",
