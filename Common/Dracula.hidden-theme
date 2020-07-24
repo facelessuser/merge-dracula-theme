@@ -4,6 +4,7 @@
     {
         "text-heading": "hsl(0, 0%, 95%)",
         "text": "hsla(0, 0%, 95%, 0.7)",
+        "text-light": "color(var(text) a(- 40%))",
 
         "red": "var(--redish)",
         "orange": "var(--orangish)",
@@ -70,7 +71,7 @@
         "commit_list_bg": "var(dark_gray-light)",
         "commit_row_bg-hover": "color(var(dark_gray-light) l(+ 10%))",
         "commit_summary_fg-primary": "var(text-heading)",
-        "commit_summary_fg-secondary": "var(text)",
+        "commit_summary_fg-secondary": "var(text-light)",
 
         "commit_edge_0": "var(cyan)",
         "commit_edge_1": "var(purple)",
@@ -192,15 +193,15 @@
         "progress_fg": "color(var(medium_gray) a(0.5))",
 
         // Quick panel
-        "quick_panel_bg": "var(dark_gray-light)",
-        "quick_panel_row_bg": "color(var(dark_gray-light) l(+ 10%))",
+        "quick_panel_bg": "var(--background)",
+        "quick_panel_row_bg": "color(var(dark_gray-light) l(+ 5%))",
         "quick_panel_fg": "var(text)",
         "quick_panel_fg-match": "var(text-heading)",
         "quick_panel_fg-selected": "var(text)",
         "quick_panel_fg-selected-match": "var(text-heading)",
-        "quick_panel_path_fg": "var(text)",
+        "quick_panel_path_fg": "var(text-light)",
         "quick_panel_path_fg-match": "var(text-heading)",
-        "quick_panel_path_fg-selected": "var(text)",
+        "quick_panel_path_fg-selected": "var(text-light)",
         "quick_panel_path_fg-selected-match": "var(text-heading)",
 
         // Image Diffs
@@ -241,6 +242,20 @@
     },
     "rules":
     [
+        {
+            "class": "overlay_container_control",
+            "layer0.opacity": 0.6,
+            "layer0.tint": "var(dark_gray-darkest)"
+        },
+        {
+            "class": "panel_control",
+            "parents": [
+                {
+                    "class": "switch_project_window"
+                }
+            ],
+            "layer0.tint": "var(--background)",
+        },
         {
             "class": "tool_tip_label_control",
             "color": "var(--background)"
