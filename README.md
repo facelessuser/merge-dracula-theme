@@ -1,4 +1,4 @@
-# merge-dracula-theme
+# Theme - Dracula
 
 [Dracula](https://draculatheme.com/) theme for Sublime Merge 2.
 
