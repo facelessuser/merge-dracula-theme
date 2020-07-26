@@ -368,7 +368,7 @@
         },
         {
             "scope": "diff.deleted",
-            "background": "color(var(pink) alpha(0.10))",
+            "background": "color(var(pink) alpha(0.15))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
@@ -378,7 +378,7 @@
         },
         {
             "scope": "diff.inserted",
-            "background": "color(var(green) alpha(0.10))",
+            "background": "color(var(green) alpha(0.15))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
