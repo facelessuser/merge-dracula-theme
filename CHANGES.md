@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1
+
+- **FIX**: Make line highlight a variable.
+
 ## 1.4
 
 - **NEW**: Deemphasize commit list text under the commit title (author and date).

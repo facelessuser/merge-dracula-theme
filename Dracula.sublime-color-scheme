@@ -4,30 +4,31 @@
 	"comments": "Derivation of: Dracula (Zeno Rocha) and Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski)",
 	"globals":
 	{
+		"accent": "var(accent)",
 		"active_guide": "var(stack)",
-		"stack_guide": "color(var(stack) a(0.75))",
 		"background": "var(background)",
+		"block_caret": "var(block-caret)",
 		"bracket_contents_foreground": "color(var(foreground) alpha(0.65))",
 		"bracket_contents_options": "underline",
 		"brackets_foreground": "color(var(foreground) alpha(0.65))",
 		"brackets_options": "underline",
 		"caret": "var(caret)",
-		"gutter_foreground": "var(accent)",
-		"block_caret": "var(block-caret)",
 		"find_highlight": "var(highlight)",
 		"find_highlight_foreground": "var(background)",
 		"foreground": "var(foreground)",
+		"gutter_foreground": "var(accent)",
+		"gutter_foreground_highlight": "var(foreground)",
 		"highlight": "var(cyan)",
 		"inactive_selection": "var(selection)",
-		"line_highlight": "var(selection)",
+		"invisibles": "color(var(foreground) a(30%))",
+		"line_highlight": "var(line_highlight)",
 		"misspelling": "var(red)",
 		"selection": "var(selection)",
 		"selection_border": "color(var(selection) lightness(35%))",
 		"shadow": "color(var(shadow) alpha(0.25))",
+		"stack_guide": "color(var(stack) a(0.75))",
 		"tags_foreground": "var(pink)",
-		"tags_options": "stippled_underline",
-		"invisibles": "color(var(foreground) a(30%))",
-		"accent": "var(accent)"
+		"tags_options": "stippled_underline"
 	},
 	"rules":
 	[
@@ -411,11 +412,13 @@
 		//   - Change background to a suitable color and line highlights and accent
 		//     colors will change accordingly.
 		//   - Pro also changes comments based on background, if you'd like something more
-		//     pro-ish, change comment's value to var(accent). And change selection to
-		//     color(var(background) s(15%) l(30%))
+		//     pro-ish, change comment's value to var(accent), change selection to
+		//     color(var(background) s(15%) l(30%)), and change line_highlight to
+		//.    color(var(background) s(25%) l(25%))
 		"background": "hsl(231, 15%, 18%)",
 		"comment": "hsl(225, 27%, 51%)",
 		"selection": "hsl(232, 14%, 31%)",
+		"line_highlight": "var(selection)",
 
 		// UI elements derived from color schemes
 		"foreground": "var(white)",

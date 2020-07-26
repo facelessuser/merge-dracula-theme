@@ -52,7 +52,8 @@ Want a pinkish theme? Plug in a pink hued background.
         //     color(var(background) s(15%) l(30%))
         "background": "hsl(326, 15%, 18%)",
         "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))"
+        "selection": "color(var(background) s(15%) l(30%))",
+        "line_highlight": "color(var(background) s(25%) l(25%))",
     }
 }
 ```
@@ -80,7 +81,8 @@ Want a darker theme? Plug in a darker background.
         //     color(var(background) s(15%) l(30%))
         "background": "hsl(225, 15%, 5%)",
         "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))"
+        "selection": "color(var(background) s(15%) l(30%))",
+        "line_highlight": "color(var(background) s(25%) l(25%))",
     }
 }
 ```
@@ -110,7 +112,8 @@ should get a Merge theme that provides a similar Pro experience.
         // Select appropriate Pro background color
         "background": "hsl(225, 15%, 5%)",
         "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))"
+        "selection": "color(var(background) s(15%) l(30%))",
+        "line_highlight": "color(var(background) s(25%) l(25%))",
     }
 }
 ```
