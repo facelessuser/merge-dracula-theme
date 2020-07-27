@@ -35,20 +35,28 @@
         // variants for classic:
         //
         //   - Change background to a suitable color and line highlights and accent
-        //     colors will change accordingly.
+        //     colors will change accordingly. In general stick to something in pretty dark.
+        //.  - Change alt-background if necessary (for sections that use a lighter background).
+        //.    If you go with a much darker background, sometimes you need a bit more contrast,
+        //.    so you have need to lighten up the alt-background a bit more, maybe `l(+ 6%)`
+        //.    or greater for a really dark background.
         //   - Pro also changes comments based on background, if you'd like something more
-        //     pro-ish, change comment's value to var(accent), change selection to
-        //     color(var(background) s(15%) l(30%)), and change line_highlight to
-        //.    color(var(background) s(25%) l(25%))
+        //     pro-ish, change comment's value to `var(accent)`
+        //.  - Change selection to something like `color(var(background) s(20%) l(30%))`
+        //.  - Change line_highlight to something like `color(var(background) s(25%) l(30%))`
+        //
+        //.These are general suggestions. Lightness and maybe even saturation may need tweaking
+        // depending on your color choices. It is important to try and have decent contrast.
         "background": "hsl(231, 15%, 18%)",
+        "alt-background": "color(var(background) l(+ 4%))",
         "comment": "hsl(225, 27%, 51%)",
         "selection": "hsl(232, 14%, 31%)",
-        "line_highlight": "color(var(selection) a(50%))",
+        "line-highlight": "var(selection)",
 
         // UI elements derived from color schemes
         "foreground": "var(white)",
-        "caret": "var(accent)",
-        "block-caret": "var(accent)",
+        "caret": "var(foreground)",
+        "block-caret": "var(caret)",
         "highlight": "var(yellow)",
         "shadow": "hsl(0, 0%, 0%)",
         "accent": "color(var(background) s(25%) l(55%))",
@@ -73,7 +81,7 @@
         "highlight": "var(cyan)",
         "inactive_selection": "var(selection)",
         "invisibles": "color(var(accent) s(30%) l(60%) a(50%))",
-        "line_highlight": "var(line_highlight)",
+        "line_highlight": "var(line-highlight)",
         "misspelling": "var(red)",
         "selection": "var(selection)",
         "selection_border": "color(var(selection) lightness(35%))",
@@ -96,7 +104,7 @@
         },
         {
             "name": "Punctuation",
-            "scope": "punctuation.definition",
+            "scope": "punctuation.definition - punctuation.definition.numeric.base",
             "foreground": "var(purple)"
         },
         {
@@ -321,12 +329,12 @@
         {
             "name": "markup code",
             "scope": "markup.raw",
-            "background": "color(var(background) lightness(- 2%))"
+            "background": "var(alt-background)"
         },
         {
             "name": "markup code",
             "scope": "markup.raw.inline",
-            "background": "color(var(background) lightness(- 3%))"
+            "background": "var(alt-background)"
         },
         {
             "name": "markup punctuation",
@@ -368,73 +376,73 @@
         },
         {
             "scope": "diff.deleted",
-            "background": "color(var(pink) alpha(0.15))",
+            "background": "color(var(pink) blend(#222222 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.deleted.char",
-            "background": "color(var(pink) alpha(0.30))",
+            "background": "color(var(pink) blend(#333333 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.inserted",
-            "background": "color(var(green) alpha(0.15))",
+            "background": "color(var(green) blend(#222222 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char",
-            "background": "color(var(green) alpha(0.30))",
+            "background": "color(var(green) blend(#333333 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.deleted.side-by-side",
-            "background": "color(var(background) lightness(+ 5%))",
+            "background": "color(var(background) l(+ 5%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.side-by-side",
-            "background": "color(var(background) lightness(+ 5%))",
+            "background": "color(var(background) l(+ 5%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.fill",
-            "background": "color(var(background) lightness(+ 5%))"
+            "background": "color(var(background) l(+ 5%))"
         },
         {
             "scope": "diff.inserted.merge-left",
-            "background": "color(var(green) alpha(0.15))",
+            "background": "color(var(green) blend(#222222 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char.merge-left",
-            "background": "color(var(green) alpha(0.30))",
+            "background": "color(var(green) blend(#222222 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.border.merge-left",
-            "background": "color(var(green) alpha(0.50))",
+            "background": "color(var(green) blend(#222222 50%))",
         },
         {
             "scope": "diff.inserted.merge-right",
-            "background": "color(var(yellow) alpha(0.15))",
+            "background": "color(var(yellow) blend(#222222 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char.merge-right",
-            "background": "color(var(yellow) alpha(0.30))",
+            "background": "color(var(yellow) blend(#222222 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.border.merge-right",
-            "background": "color(var(yellow) alpha(0.50))",
+            "background": "color(var(green) blend(#222222 50%))",
         },
         {
             "scope": "diff.border.merge-conflict",
-            "background": "color(var(red) alpha(0.50))",
+            "background": "color(var(red) blend(#222222 50%))",
         },
         {
             "scope": "diff.border.merge-merged",
-            "background": "color(var(purple) alpha(0.50))",
+            "background": "color(var(purple) blend(#222222 50%))",
         },
         {
             "scope": "blame.border",

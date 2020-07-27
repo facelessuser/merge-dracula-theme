@@ -46,14 +46,23 @@ Want a pinkish theme? Plug in a pink hued background.
         // variants for classic:
         //
         //   - Change background to a suitable color and line highlights and accent
-        //     colors will change accordingly.
+        //     colors will change accordingly. In general stick to something in pretty dark.
+        //.  - Change alt-background if necessary (for sections that use a lighter background).
+        //.    If you go with a much darker background, sometimes you need a bit more contrast,
+        //.    so you have need to lighten up the alt-background a bit more, maybe `l(+ 6%)`
+        //.    or greater for a really dark background.
         //   - Pro also changes comments based on background, if you'd like something more
-        //     pro-ish, change comment's value to var(accent). And change selection to
-        //     color(var(background) s(15%) l(30%))
+        //     pro-ish, change comment's value to `var(accent)`
+        //.  - Change selection to something like `color(var(background) s(20%) l(30%))`
+        //.  - Change line_highlight to something like `color(var(background) s(25%) l(30%))`
+        //
+        //.These are general suggestions. Lightness and maybe even saturation may need tweaking
+        // depending on your color choices. It is important to try and have decent contrast.
         "background": "hsl(326, 15%, 18%)",
+        "alt-background": "color(var(background) l(+ 4%))",
         "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "line_highlight": "color(var(background) s(25%) l(25%))",
+        "selection": "color(var(background) s(20%) l(30%))",
+        "line-highlight": "color(var(background) s(25%) l(30%))",
     }
 }
 ```
@@ -75,14 +84,23 @@ Want a darker theme? Plug in a darker background.
         // variants for classic:
         //
         //   - Change background to a suitable color and line highlights and accent
-        //     colors will change accordingly.
+        //     colors will change accordingly. In general stick to something in pretty dark.
+        //.  - Change alt-background if necessary (for sections that use a lighter background).
+        //.    If you go with a much darker background, sometimes you need a bit more contrast,
+        //.    so you have need to lighten up the alt-background a bit more, maybe `l(+ 6%)`
+        //.    or greater for a really dark background.
         //   - Pro also changes comments based on background, if you'd like something more
-        //     pro-ish, change comment's value to var(accent). And change selection to
-        //     color(var(background) s(15%) l(30%))
+        //     pro-ish, change comment's value to `var(accent)`
+        //.  - Change selection to something like `color(var(background) s(20%) l(30%))`
+        //.  - Change line_highlight to something like `color(var(background) s(25%) l(30%))`
+        //
+        //.These are general suggestions. Lightness and maybe even saturation may need tweaking
+        // depending on your color choices. It is important to try and have decent contrast.
         "background": "hsl(225, 15%, 5%)",
+        "alt-background": "color(var(background) l(+ 6%))",
         "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "line_highlight": "color(var(background) s(25%) l(25%))",
+        "selection": "color(var(background) s(20%) l(30%))",
+        "line-highlight": "color(var(background) s(25%) l(30%))",
     }
 }
 ```
@@ -110,10 +128,11 @@ should get a Merge theme that provides a similar Pro experience.
         "purple": "hsl(265, 89%, 78%)",
 
         // Select appropriate Pro background color
-        "background": "hsl(225, 15%, 5%)",
-        "comment": "var(accent)",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "line_highlight": "color(var(background) s(25%) l(25%))",
+        "background": "hsl(231, 15%, 18%)",
+        "alt-background": "color(var(background) l(+ 4%))",
+        "comment": "hsl(225, 27%, 51%)",
+        "selection": "hsl(232, 14%, 31%)",
+        "line-highlight": "var(selection)",
     }
 }
 ```
