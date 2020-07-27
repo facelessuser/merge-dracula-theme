@@ -1,15 +1,13 @@
 # Changelog
 
-## 1.4.1
-
-- **FIX**: Make line highlight a variable.
-
 ## 1.4
 
 - **NEW**: Deemphasize commit list text under the commit title (author and date).
 - **NEW**: Adjust style of overlay.
 - **NEW**: Adjust style of quick panels.
 - **NEW**: Make commit list annotation text contrast less intense.
+- **NEW**: Better Markdown code background color.
+- **NEW**: Better diffing colors that contrast better.
 
 ## 1.3.1
 
