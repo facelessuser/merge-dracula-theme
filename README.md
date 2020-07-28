@@ -1,6 +1,7 @@
 # Theme - Dracula
 
-[Dracula](https://draculatheme.com/) theme for Sublime Merge 2.
+[Dracula](https://draculatheme.com/) theme for Sublime Merge 2. It is based off the Sublime Mariana color scheme, but
+uses the classic Dracula color palette.
 
 ![Sublime Merge](./sublime_merge.png)
 
@@ -21,17 +22,15 @@ Pro is also not free. Because of this, we only provide the "classic" Dracula pal
 We do not know what the Pro palette is, and though we could probably guess pretty close, we feel it is not appropriate
 to publish such information even if we could identify it.
 
-While we cannot provide the Pro theme palette or the pro theme variants, we have designed the color schemes to be pretty
-customizable so you can create your own pro-ish style variants. Pro themes seem to have different backgrounds and
-accents that adapt to those backgrounds. The rest of the palette seems to not change between variants. This theme's
-color scheme uses the Classic color palette, but is designed in such a way that with a few simple overrides, you can
-create your own Pro-ish style variants.
+While we cannot provide the Pro theme palette or the Pro theme variants, we have designed the color schemes to be pretty
+customizable so you can create your own Pro-ish style variants. Pro themes seem to have different backgrounds and
+accents that adapt to those backgrounds. The rest of the palette seems to not change between variants.
 
-Simply override the background with the color of your choice, and create comments and selections that adapt based on
-your background selection. You can create an override file using the name `Dracula.sublime-color-scheme` in your `User`
-folder.
+This color scheme is designed in such a way as to be customizable. Simply override the background with the color of your
+choice, and create comments and selections that adapt based on your background selection (or other color if you choose).
+You can create an override file using the name `Dracula.sublime-color-scheme` in your `User` folder.
 
-Want a pinkish theme? Plug in a pink hued background.
+Want a pinkish theme? Plug in a pink hued background and tweak a couple variables.
 
 ```js
 {
@@ -69,7 +68,8 @@ Want a pinkish theme? Plug in a pink hued background.
 
 ![Pink](./sublime_merge_pink.png)
 
-Want a darker theme? Plug in a darker background.
+Want a darker theme? Plug in a darker background and take care to adjust some of the variables to provide decent
+contrast.
 
 ```js
 {
