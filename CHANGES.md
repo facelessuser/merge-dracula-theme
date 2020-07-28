@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1
+
+- **FIX**: Contrast issues with comments and diff background.
+
 ## 1.4
 
 - **NEW**: Deemphasize commit list text under the commit title (author and date).

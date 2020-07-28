@@ -58,9 +58,10 @@
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
         "highlight": "var(yellow)",
+        "accent": "color(var(background) s(30%) l(60%))",
         "shadow": "hsl(0, 0%, 0%)",
-        "accent": "color(var(background) s(25%) l(55%))",
-        "stack": "color(var(accent) s(100%) l(75%))"
+        "stack": "color(var(accent) s(100%) l(75%))",
+        "darken": "hsl(0, 0%, 13%)"
     },
     "globals":
     {
@@ -376,22 +377,22 @@
         },
         {
             "scope": "diff.deleted",
-            "background": "color(var(pink) blend(#222222 17%))",
+            "background": "color(var(pink) blend(var(darken) 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.deleted.char",
-            "background": "color(var(pink) blend(#333333 35%))",
+            "background": "color(var(pink) blend(var(darken) 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.inserted",
-            "background": "color(var(green) blend(#222222 17%))",
+            "background": "color(var(green) blend(var(darken) 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char",
-            "background": "color(var(green) blend(#333333 35%))",
+            "background": "color(var(green) blend(var(darken) 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
@@ -410,39 +411,39 @@
         },
         {
             "scope": "diff.inserted.merge-left",
-            "background": "color(var(green) blend(#222222 17%))",
+            "background": "color(var(green) blend(var(darken) 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char.merge-left",
-            "background": "color(var(green) blend(#222222 35%))",
+            "background": "color(var(green) blend(var(darken) 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.border.merge-left",
-            "background": "color(var(green) blend(#222222 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))",
         },
         {
             "scope": "diff.inserted.merge-right",
-            "background": "color(var(yellow) blend(#222222 17%))",
+            "background": "color(var(yellow) blend(var(darken) 17%))",
             "foreground_adjust": "l(+ 5%)"
         },
         {
             "scope": "diff.inserted.char.merge-right",
-            "background": "color(var(yellow) blend(#222222 35%))",
+            "background": "color(var(yellow) blend(var(darken) 35%))",
             "foreground_adjust": "l(+ 10%)"
         },
         {
             "scope": "diff.border.merge-right",
-            "background": "color(var(green) blend(#222222 50%))",
+            "background": "color(var(green) blend(var(darken) 50%))",
         },
         {
             "scope": "diff.border.merge-conflict",
-            "background": "color(var(red) blend(#222222 50%))",
+            "background": "color(var(red) blend(var(darken) 50%))",
         },
         {
             "scope": "diff.border.merge-merged",
-            "background": "color(var(purple) blend(#222222 50%))",
+            "background": "color(var(purple) blend(var(darken) 50%))",
         },
         {
             "scope": "blame.border",
