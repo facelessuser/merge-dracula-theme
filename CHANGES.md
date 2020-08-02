@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.2
+
+- **FIX**: Fix issue where we were using the color `blue` for two of the blame colors when we should have used `cyan` in
+  one of the slots.
+- **FIX**: Use same colors for commit edge control as we use for blame controls.
+
 ## 1.4.1
 
 - **FIX**: Contrast issues with comments and diff background.

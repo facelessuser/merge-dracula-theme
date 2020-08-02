@@ -73,13 +73,6 @@
         "commit_summary_fg-primary": "var(text-heading)",
         "commit_summary_fg-secondary": "var(text-light)",
 
-        "commit_edge_0": "var(cyan)",
-        "commit_edge_1": "var(purple)",
-        "commit_edge_2": "var(pink)",
-        "commit_edge_3": "var(orange)",
-        "commit_edge_4": "var(yellow)",
-        "commit_edge_5": "var(green)",
-
         // Location Bar
         "side_bar_container_bg": "var(dark_gray-lightest)",
 
@@ -385,10 +378,22 @@
             "layer0.tint": "var(green)",
         },
         {
+            "class": "commit_edges_control",
+            "num_colors": 8,
+            "color0": "var(cyan)",
+            "color1": "var(purple)",
+            "color2": "var(pink)",
+            "color3": "var(orange)",
+            "color4": "var(yellow)",
+            "color5": "var(green)",
+            "color6": "var(red)",
+            "color7": "var(blue)",
+        },
+        {
             "class": "blame_text_control",
             "settings": ["!kelly_colors"],
             "num_colors": 8,
-            "color0": "var(blue)",
+            "color0": "var(cyan)",
             "color1": "var(purple)",
             "color2": "var(pink)",
             "color3": "var(orange)",
