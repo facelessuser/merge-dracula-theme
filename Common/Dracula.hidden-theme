@@ -2,8 +2,9 @@
     "extends": "Merge.sublime-theme",
     "variables":
     {
-        "text-heading": "hsl(0, 0%, 95%)",
-        "text": "hsla(0, 0%, 95%, 0.7)",
+        "white": "hsl(0, 0%, 95%)",
+        "text-heading": "var(white)",
+        "text": "color(var(white) a(- 30%))",
         "text-light": "color(var(text) a(- 40%))",
 
         "red": "var(--redish)",
@@ -85,7 +86,7 @@
         // Detail panel
         "detail_panel_bg": "var(--background)",
         "field_name_fg": "var(text)",
-        "author_fg": "color(var(--foreground) a(0.4))",
+        "author_fg": "color(var(white) a(0.4))",
         "terminator_fg": "var(medium_gray)",
 
         // Annotations
@@ -105,12 +106,12 @@
         "stash_ann_bg": "var(orange)",
 
         "file_ann_fg": "var(text)",
-        "file_ann_bg": "color(var(--foreground) a(0.2))",
+        "file_ann_bg": "color(var(white) a(0.2))",
 
         "submodule_ann_fg": "var(text)",
-        "submodule_ann_bg": "color(var(--foreground) a(20%))",
+        "submodule_ann_bg": "color(var(white) a(20%))",
         "submodule_light_ann_fg": "var(text)",
-        "submodule_light_ann_bg": "color(var(--foreground) a(20%))",
+        "submodule_light_ann_bg": "color(var(white) a(20%))",
 
         "inserted_ann_bg": "color(var(pink) blend(#333333 35%))",
         "deleted_ann_bg": "color(var(green) blend(#333333 35%))",
@@ -149,7 +150,7 @@
         "blame_popup_bg": "color(var(--background) l(+ 10%))",
 
         // Buttons
-        "button_bg": "color(var(--foreground) a(20%))",
+        "button_bg": "color(var(white) a(20%))",
         "button_fg": "var(label_color)",
         "button_shadow": "color(black a(0.5))",
 
@@ -159,7 +160,7 @@
         "highlighted_button_dark_fg": "var(label_color)",
         "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
 
-        "toggle_button_bg": "color(var(--foreground) a(20%))", // This matches the header hover buttons
+        "toggle_button_bg": "color(var(white) a(20%))", // This matches the header hover buttons
         "toggle_button_fg": "var(text)",
         "toggle_button_fg_selected": "var(text-heading)",
 
@@ -179,7 +180,7 @@
 
         // Dialogs
         "dialog_bg": "var(dark_gray-dark)",
-        "dialog_button_bg": "color(var(--foreground) a(20%))",
+        "dialog_button_bg": "color(var(white) a(20%))",
 
         // Progress bar
         "progress_bg": "var(dark_gray-lightest)",
@@ -199,7 +200,7 @@
 
         // Image Diffs
         "image_diff_checkerboard_alt_bg": "color(var(--background) l(+ 10%))",
-        "image_metadata_label_bg": "color(var(--foreground) a(20%))",
+        "image_metadata_label_bg": "color(var(white) a(20%))",
 
         // Switch repository window
         "switch_repo_bg": "var(dark_gray-light)",
@@ -225,13 +226,13 @@
         "file_badge_created_fg": "var(green)",
         "file_badge_deleted_fg": "var(pink)",
         "file_badge_modified_fg": "var(orange)",
-        "file_badge_modified_bg": "color(var(--foreground) a(20%))",
+        "file_badge_modified_bg": "color(var(white) a(20%))",
         "file_badge_unmerged_fg": "var(cyan)",
-        "file_badge_unmerged_bg": "color(var(--foreground) a(20%))",
+        "file_badge_unmerged_bg": "color(var(white) a(20%))",
         "file_badge_untracked_fg": "var(purple)",
-        "file_badge_untracked_bg": "color(var(--foreground) a(20%))",
+        "file_badge_untracked_bg": "color(var(white) a(20%))",
         "file_badge_staged_fg": "var(green)",
-        "file_badge_staged_bg": "color(var(--foreground) a(20%))",
+        "file_badge_staged_bg": "color(var(white) a(20%))",
     },
     "rules":
     [
@@ -342,15 +343,15 @@
         },
         {
             "class": "search_help",
-            "headline_color": "color(var(--foreground) l(- 10%))",
+            "headline_color": "color(var(white) l(- 10%))",
         },
         {
             "class": "quick_panel_label hint",
-            "color": "color(var(--foreground) a(- 50%))"
+            "color": "color(var(white) a(- 50%))"
         },
         {
             "class": "quick_panel_label key_binding",
-            "color": "color(var(--foreground) a(- 50%))"
+            "color": "color(var(white) a(- 50%))"
         },
         {
             "class": "diff_text_control",
@@ -361,7 +362,7 @@
         },
         {
             "class": "branch_stat",
-            "layer0.tint": "color(var(--foreground) a(0.2))",
+            "layer0.tint": "color(var(white) a(0.2))",
         },
         {
             "class": "branch_stat_label",
@@ -606,17 +607,17 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "fg": "var(--foreground)"
+            "fg": "var(white)"
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected"]}],
-            "fg": "color(var(--foreground) a(0.3))"
+            "fg": "color(var(white) a(0.3))"
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected", "hover"]}],
-            "fg": "color(var(--foreground) a(0.6))"
+            "fg": "color(var(white) a(0.6))"
         },
         {
             "class": "icon_folder",
@@ -642,7 +643,7 @@
                 }
             ],
             "layer0.opacity": 0.3,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(white)"
         },
 
         {
@@ -657,7 +658,7 @@
                 }
             ],
             "layer0.opacity": 0.6,
-            "layer0.tint": "var(--foreground)"
+            "layer0.tint": "var(white)"
         },
 
         {
