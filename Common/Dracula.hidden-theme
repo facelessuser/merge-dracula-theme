@@ -6,6 +6,7 @@
         "text-heading": "var(white)",
         "text": "color(var(white) a(- 30%))",
         "text-light": "color(var(text) a(- 40%))",
+        "darken": "hsl(0, 0%, 13%)",
 
         "red": "var(--redish)",
         "orange": "var(--orangish)",
@@ -113,8 +114,8 @@
         "submodule_light_ann_fg": "var(text)",
         "submodule_light_ann_bg": "color(var(white) a(20%))",
 
-        "inserted_ann_bg": "color(var(pink) blend(#333333 35%))",
-        "deleted_ann_bg": "color(var(green) blend(#333333 35%))",
+        "inserted_ann_bg": "color(var(pink) blend(var(darken) 35%))",
+        "deleted_ann_bg": "color(var(green) blend(var(darken) 35%))",
 
         // Diff headers
         "file_diff_shadow": "color(black a(0.5))",
@@ -188,15 +189,15 @@
 
         // Quick panel
         "quick_panel_bg": "var(--background)",
-        "quick_panel_row_bg": "color(var(dark_gray-light) l(+ 5%))",
+        "quick_panel_row_bg": "color(var(white) a(10%))",
         "quick_panel_fg": "var(text)",
-        "quick_panel_fg-match": "var(text-heading)",
+        "quick_panel_fg-match": "var(--accent)",
         "quick_panel_fg-selected": "var(text)",
-        "quick_panel_fg-selected-match": "var(text-heading)",
+        "quick_panel_fg-selected-match": "var(--accent)",
         "quick_panel_path_fg": "var(text-light)",
-        "quick_panel_path_fg-match": "var(text-heading)",
+        "quick_panel_path_fg-match": "var(--accent)",
         "quick_panel_path_fg-selected": "var(text-light)",
-        "quick_panel_path_fg-selected-match": "var(text-heading)",
+        "quick_panel_path_fg-selected-match": "var(--accent)",
 
         // Image Diffs
         "image_diff_checkerboard_alt_bg": "color(var(--background) l(+ 10%))",

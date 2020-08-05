@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5
+
+- **NEW**: Adjust color scheme to be a little easier to customize and remove unnecessary rules.
+- **NEW**: Expose `accent` but don't tie it to stack colors or whitespace.
+- **NEW**: Command palette will use `accent` color in Merge for fuzzy match characters and provide a suitable row
+  background for contrast.
+- **FIX**: Better guide to customizing.
+
 ## 1.4.2
 
 - **FIX**: Fix issue where we were using the color `blue` for two of the blame colors when we should have used `cyan` in

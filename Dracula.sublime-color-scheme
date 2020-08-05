@@ -6,29 +6,29 @@
     {
         // Static palette colors. These are constant through all variations.
         "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
-        "red": "hsl(0, 100%, 67%)", // #ff5555
-        "orange": "hsl(31, 100%, 71%)", // #ffb86c
-        "yellow": "hsl(65, 92%, 76%)", // #f1fa8c
-        "green": "hsl(135, 94%, 65%)", // #50fa7b
-        "cyan": "hsl(191, 97%, 77%)", // #8be9fd
-        "blue": "hsl(225, 27%, 51%)", // #6272a4
-        "pink": "hsl(326, 100%, 74%)", // #ff79c6
-        "purple": "hsl(265, 89%, 78%)", // #bd93f9
+        "red": "hsl(0, 100%, 67%)",        // #ff5555
+        "orange": "hsl(31, 100%, 71%)",    // #ffb86c
+        "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
+        "green": "hsl(135, 94%, 65%)",     // #50fa7b
+        "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
+        "blue": "hsl(225, 27%, 51%)",      // #6272a4
+        "pink": "hsl(326, 100%, 74%)",     // #ff79c6
+        "purple": "hsl(265, 89%, 78%)",    // #bd93f9
 
         // Variant specific colors (change these for variants)
         "background": "hsl(231, 15%, 18%)", // #282a36
-        "selection": "hsl(232, 14%, 31%)", // #44475a
-        "comment": "var(blue)", // #6272a4
+        "selection": "hsl(232, 14%, 31%)",  // #44475a
+        "comment": "var(blue)",             // #6272a4
         "line-highlight": "var(selection)",
         "alt-background": "color(var(background) l(+ 4%))",
+        "accent": "var(blue)",
 
         // UI elements derived from color schemes
         "caret": "var(foreground)",
         "block-caret": "var(caret)",
         "highlight": "var(yellow)",
-        "accent": "color(var(comment) s(30%) l(60%))",
         "shadow": "hsl(0, 0%, 0%)",
-        "stack": "color(var(accent) s(100%) l(75%))",
+        "stack": "color(var(comment) s(100%) l(75%))",
         "darken": "hsl(0, 0%, 13%)",
 
         // Sublime has difficulty detecting purplish from bluish, etc.
@@ -60,7 +60,7 @@
         "gutter_foreground_highlight": "var(comment)",
         "highlight": "var(cyan)",
         "inactive_selection": "var(selection)",
-        "invisibles": "color(var(accent) s(30%) l(60%) a(50%))",
+        "invisibles": "color(var(comment) s(30%) l(60%) a(50%))",
         "line_highlight": "var(line-highlight)",
         "misspelling": "var(red)",
         "selection": "var(selection)",
