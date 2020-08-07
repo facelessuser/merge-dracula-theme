@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.1
+
+- **FIX**: Fix icon colors in Merge 2028.
+
 ## 1.5
 
 - **NEW**: Adjust color scheme to be a little easier to customize and remove unnecessary rules.

@@ -142,6 +142,8 @@
         "untracked_header_bg": "color(var(--background) l(+ 5%))",
         "untracked_header_bg-hover": "color(var(--background) l(+ 8%))",
 
+        "full_context_icon_bg": "var(text)",
+
         "staged_icon_fg": "var(text)",
 
         "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
