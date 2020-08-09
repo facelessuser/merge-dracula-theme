@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2
+
+- **FIX**: Better file header colors.
+
 ## 1.5.1
 
 - **FIX**: Fix icon colors in Merge 2028.

@@ -124,10 +124,10 @@
         "hunk_button_fg": "white",
         "hunk_button_shadow": "color(black a(0.5))",
 
-        "file_header_bg": "color(var(--background) s(+ 5%) l(+ 5%))",
-        "file_header_bg-hover": "color(var(--background) s(+ 5%) l(+ 8%))",
+        "file_header_bg": "var(dark_gray-light)",
+        "file_header_bg-hover": "color(var(dark_gray-light) l(+ 3%))",
 
-        "hunk_header_bg": "color(var(--background) s(+ 5%) l(+ 11%))",
+        "hunk_header_bg": "var(dark_gray-lightest)",
 
         "deleted_icon_fg": "var(text)",
         "deleted_header_bg": "var(dark_red)",
@@ -135,12 +135,12 @@
 
         "unmerged_icon_fg": "var(text)",
         "unmerged_header_bg": "var(dark_blue)",
-        "unmerged_header_bg-hover": "color(var(dark_blue) l(+ 5%))",
+        "unmerged_header_bg-hover": "color(var(dark_blue) l(+ 3%))",
 
         "recent_icon_fg": "var(yellow)",
         "recent_icon_bg": "transparent",
-        "untracked_header_bg": "color(var(--background) l(+ 5%))",
-        "untracked_header_bg-hover": "color(var(--background) l(+ 8%))",
+        "untracked_header_bg": "color(var(--background) s(- 10%) l(20%))",
+        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 3%))",
 
         "full_context_icon_bg": "var(text)",
 
