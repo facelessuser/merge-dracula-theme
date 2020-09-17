@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5
+
+- **FIX**: Fix rendering issue when multiple repository tabs compress.
+
 ## 1.5.4
 
 - **FIX**: Increase contrast of inactive repository tab text.

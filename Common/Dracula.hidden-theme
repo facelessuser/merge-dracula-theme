@@ -814,7 +814,7 @@
 
         {
             "class": "tab_control",
-            "layer1.opacity": 0,
+            "layer3.opacity": { "target": 0.2, "speed": 2.0, "interpolation": "smoothstep" },
         }
     ]
 }
