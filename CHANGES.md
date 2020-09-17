@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.4
+
+- **FIX**: Increase contrast of inactive repository tab text.
+- **FIX**: Style stash and tag labels different from branch and main branch styles.
+
 ## 1.5.3
 
 - **FIX**: Fix commit edge not matching labels in latest Merge.

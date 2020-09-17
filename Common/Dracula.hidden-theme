@@ -120,14 +120,14 @@
 
         "commit_annotation_fg_inverted": "color(var(--background) a(0.7))",
 
-        "commit_annotation_bg_inverted_0": "color(var(commit_edge_0))",
-        "commit_annotation_bg_inverted_1": "color(var(commit_edge_1))",
-        "commit_annotation_bg_inverted_2": "color(var(commit_edge_2))",
-        "commit_annotation_bg_inverted_3": "color(var(commit_edge_3))",
-        "commit_annotation_bg_inverted_4": "color(var(commit_edge_4))",
-        "commit_annotation_bg_inverted_5": "color(var(commit_edge_5))",
-        "commit_annotation_bg_inverted_6": "color(var(commit_edge_6))",
-        "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
+        "commit_annotation_bg_inverted_0": "var(commit_edge_0)",
+        "commit_annotation_bg_inverted_1": "var(commit_edge_1)",
+        "commit_annotation_bg_inverted_2": "var(commit_edge_2)",
+        "commit_annotation_bg_inverted_3": "var(commit_edge_3)",
+        "commit_annotation_bg_inverted_4": "var(commit_edge_4)",
+        "commit_annotation_bg_inverted_5": "var(commit_edge_5)",
+        "commit_annotation_bg_inverted_6": "var(commit_edge_6)",
+        "commit_annotation_bg_inverted_7": "var(commit_edge_7)",
 
         // Location Bar
         "side_bar_container_bg": "var(dark_gray-lightest)",
@@ -147,11 +147,13 @@
         "remote_ann_fg": "color(var(--background) a(0.7))",
         "remote_ann_bg": "var(green)",
 
-        "tag_ann_fg": "color(var(--background) a(0.7))",
-        "tag_ann_bg": "var(yellow)",
+        "stash_ann_fg": "color(var(--background) a(0.7))",
+        "stash_ann_bg": "var(text-heading)",
+        "stash_ann_border": "var(text-heading)",
 
-        "stash_ann_fg": "color(var(orange))",
-        "stash_ann_bg": "var(orange)",
+        "tag_ann_fg": "var(text)",
+        "tag_ann_bg": "color(var(white) a(20%))",
+        "tag_ann_border": "color(var(white) a(20%))",
 
         "file_ann_fg": "var(text)",
         "file_ann_bg": "color(var(white) a(0.2))",
@@ -297,9 +299,46 @@
         },
         {
             "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
+            "border_color": "var(commit_annotation_fg_0_border)"
+
+        },
+        {
+            "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
+            "border_color": "var(commit_annotation_fg_1_border)"
+
+        },
+        {
+            "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
+            "border_color": "var(commit_annotation_fg_2_border)"
+
+        },
+        {
+            "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
+            "border_color": "var(commit_annotation_fg_3_border)"
+
+        },
+        {
+            "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
+            "border_color": "var(commit_annotation_fg_4_border)"
+
+        },
+        {
+            "class": "commit_annotation",
+            "parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
+            "border_color": "var(commit_annotation_fg_5_border)"
+
+        },
+        {
+            "class": "commit_annotation",
             "parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
             "color": "var(commit_annotation_fg_6)",
             "background_color": "var(commit_annotation_bg_6)",
+            "border_color": "var(commit_annotation_fg_6_border)"
         },
         {
             "class": "commit_annotation branch head",
@@ -318,6 +357,7 @@
             "parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
             "color": "var(commit_annotation_fg_7)",
             "background_color": "var(commit_annotation_bg_7)",
+            "border_color": "var(commit_annotation_fg_7_border)"
         },
         {
             "class": "commit_annotation branch head",
@@ -330,6 +370,27 @@
             "color": "var(commit_annotation_fg_7)",
             "border_color": "var(commit_annotation_fg_7_border)",
             "background_color": "var(commit_annotation_bg_7)",
+        },
+        {
+            "class": "stash_annotation",
+            "color": "var(stash_ann_fg)",
+            "background_color": "var(stash_ann_bg)",
+            "border_color": "var(stash_ann_border)",
+        },
+        {
+            "class": "tag_annotation_container",
+            "content_margin": [4, 0],
+            "background_color": "var(tag_ann_bg)",
+            "border_color": "var(tag_ann_border)",
+        },
+        {
+            "class": "tag_annotation_icon",
+            "layer0.opacity": 1,
+            "layer0.tint": "var(yellow)",
+        },
+        {
+            "class": "tag_annotation",
+            "color": "var(tag_ann_fg)"
         },
         {
             "class": "panel_control",
@@ -702,12 +763,12 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected"]}],
-            "fg": "color(var(white) a(0.3))"
+            "fg": "color(var(white) a(0.5))"
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected", "hover"]}],
-            "fg": "color(var(white) a(0.6))"
+            "fg": "color(var(white) a(0.7))"
         },
         {
             "class": "icon_folder",
