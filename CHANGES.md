@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5.3
+
+- **FIX**: Fix commit edge not matching labels in latest Merge.
+- **FIX**: Fix stash not being too visible in latest Merge.
+
 ## 1.5.2
 
 - **FIX**: Better file header colors.
