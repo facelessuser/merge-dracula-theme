@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.6
+
+- **FIX**: Updates to accomodate Sublime HQ's latest changes to to branch labels.
+
 ## 1.5.5
 
 - **FIX**: Fix rendering issue when multiple repository tabs compress.
