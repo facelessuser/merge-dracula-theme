@@ -1,8 +1,12 @@
 # Changelog
 
+## 1.5.7
+
+- **FIX**: Regression causing location sidebar and files sidebar to match the commit sidebar color.
+
 ## 1.5.6
 
-- **FIX**: Updates to accomodate Sublime HQ's latest changes to to branch labels.
+- **FIX**: Updates to accommodate Sublime HQ's latest changes to to branch labels.
 
 ## 1.5.5
 
