@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.8
+
+- **FIX**: Fix labels to match Merge's latest label style iteration.
+
 ## 1.5.7
 
 - **FIX**: Regression causing location sidebar and files sidebar to match the commit sidebar color.

@@ -85,43 +85,29 @@
         "commit_edge_6": "var(red)",
         "commit_edge_7": "var(blue)",
 
-        "commit_annotation_fg_0": "color(var(commit_edge_0) l(+ 5%))",
-        "commit_annotation_fg_1": "color(var(commit_edge_1) l(+ 5%))",
-        "commit_annotation_fg_2": "color(var(commit_edge_2) l(+ 5%))",
-        "commit_annotation_fg_3": "color(var(commit_edge_3) l(+ 5%))",
-        "commit_annotation_fg_4": "color(var(commit_edge_4) l(+ 5%))",
-        "commit_annotation_fg_5": "color(var(commit_edge_5) l(+ 5%))",
-        "commit_annotation_fg_6": "color(var(commit_edge_6) l(+ 5%))",
-        "commit_annotation_fg_7": "color(var(commit_edge_7) l(+ 5%))",
+        // Annotations
+        "commit_annotation_fg": "var(text)",
+        "commit_annotation_fg_inverted": "var(--background)",
+        "commit_annotation_bg": "color(white a(20%))",
 
-        "commit_annotation_fg_0_border": "var(commit_annotation_fg_0)",
-        "commit_annotation_fg_1_border": "var(commit_annotation_fg_1)",
-        "commit_annotation_fg_2_border": "var(commit_annotation_fg_2)",
-        "commit_annotation_fg_3_border": "var(commit_annotation_fg_3)",
-        "commit_annotation_fg_4_border": "var(commit_annotation_fg_4)",
-        "commit_annotation_fg_5_border": "var(commit_annotation_fg_5)",
-        "commit_annotation_fg_6_border": "var(commit_annotation_fg_6)",
-        "commit_annotation_fg_7_border": "var(commit_annotation_fg_7)",
+        "commit_annotation_fg_0_border": "var(commit_edge_0)",
+        "commit_annotation_fg_1_border": "var(commit_edge_1)",
+        "commit_annotation_fg_2_border": "var(commit_edge_2)",
+        "commit_annotation_fg_3_border": "var(commit_edge_3)",
+        "commit_annotation_fg_4_border": "var(commit_edge_4)",
+        "commit_annotation_fg_5_border": "var(commit_edge_5)",
+        "commit_annotation_fg_6_border": "var(commit_edge_6)",
+        "commit_annotation_fg_7_border": "var(commit_edge_7)",
 
-        "commit_annotation_bg_0": "color(var(commit_edge_0) blend(white 75%) a(20%))",
-        "commit_annotation_bg_1": "color(var(commit_edge_1) blend(white 75%) a(20%))",
-        "commit_annotation_bg_2": "color(var(commit_edge_2) blend(white 75%) a(20%))",
-        "commit_annotation_bg_3": "color(var(commit_edge_3) blend(white 75%) a(20%))",
-        "commit_annotation_bg_4": "color(var(commit_edge_4) blend(white 75%) a(20%))",
-        "commit_annotation_bg_5": "color(var(commit_edge_5) blend(white 75%) a(20%))",
-        "commit_annotation_bg_6": "color(var(commit_edge_6) blend(white 75%) a(20%))",
-        "commit_annotation_bg_7": "color(var(commit_edge_7) blend(white 75%) a(20%))",
 
-        "commit_annotation_fg_inverted": "color(var(--background) a(0.7))",
-
-        "commit_annotation_bg_inverted_0": "var(commit_edge_0)",
-        "commit_annotation_bg_inverted_1": "var(commit_edge_1)",
-        "commit_annotation_bg_inverted_2": "var(commit_edge_2)",
-        "commit_annotation_bg_inverted_3": "var(commit_edge_3)",
-        "commit_annotation_bg_inverted_4": "var(commit_edge_4)",
-        "commit_annotation_bg_inverted_5": "var(commit_edge_5)",
-        "commit_annotation_bg_inverted_6": "var(commit_edge_6)",
-        "commit_annotation_bg_inverted_7": "var(commit_edge_7)",
+        "commit_annotation_bg_inverted_0": "color(var(commit_edge_0))",
+        "commit_annotation_bg_inverted_1": "color(var(commit_edge_1))",
+        "commit_annotation_bg_inverted_2": "color(var(commit_edge_2))",
+        "commit_annotation_bg_inverted_3": "color(var(commit_edge_3))",
+        "commit_annotation_bg_inverted_4": "color(var(commit_edge_4))",
+        "commit_annotation_bg_inverted_5": "color(var(commit_edge_5))",
+        "commit_annotation_bg_inverted_6": "color(var(commit_edge_6))",
+        "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
 
         // Location Bar
         "side_bar_container_bg": "var(dark_gray-lightest)",
@@ -145,9 +131,9 @@
         "stash_ann_bg": "color(var(white) a(20%))",
         "stash_ann_border": "color(var(white) a(50%))",
 
-        "tag_ann_fg": "var(text)",
-        "tag_ann_bg": "color(var(white) a(20%))",
-        "tag_ann_border": "color(var(white) a(20%))",
+        "tag_ann_fg": "var(--background)",
+        "tag_ann_bg": "var(yellow)",
+        "tag_ann_opacity": 0.4,
 
         "file_ann_fg": "var(text)",
         "file_ann_bg": "color(var(white) a(0.2))",
@@ -292,170 +278,24 @@
             "num_unique_columns": "var(commit_color_count)",
         },
         {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
-            "color": "var(commit_annotation_fg_0)",
-            "background_color": "var(commit_annotation_bg_0)",
-            "border_color": "var(commit_annotation_fg_0_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_0)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_1"]}],
-            "color": "var(commit_annotation_fg_0)",
-            "border_color": "var(commit_annotation_fg_0_border)",
-            "background_color": "var(commit_annotation_bg_0)",
-        },
-        {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
-            "color": "var(commit_annotation_fg_1)",
-            "background_color": "var(commit_annotation_bg_1)",
-            "border_color": "var(commit_annotation_fg_1_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_1)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_2"]}],
-            "color": "var(commit_annotation_fg_1)",
-            "border_color": "var(commit_annotation_fg_1_border)",
-            "background_color": "var(commit_annotation_bg_1)",
-        },
-        {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
-            "color": "var(commit_annotation_fg_2)",
-            "background_color": "var(commit_annotation_bg_2)",
-            "border_color": "var(commit_annotation_fg_2_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_2)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_3"]}],
-            "color": "var(commit_annotation_fg_2)",
-            "border_color": "var(commit_annotation_fg_2_border)",
-            "background_color": "var(commit_annotation_bg_2)",
-        },
-        {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
-            "color": "var(commit_annotation_fg_3)",
-            "background_color": "var(commit_annotation_bg_3)",
-            "border_color": "var(commit_annotation_fg_3_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_3)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_4"]}],
-            "color": "var(commit_annotation_fg_3)",
-            "border_color": "var(commit_annotation_fg_3_border)",
-            "background_color": "var(commit_annotation_bg_3)",
-        },
-        {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
-            "color": "var(commit_annotation_fg_4)",
-            "background_color": "var(commit_annotation_bg_4)",
-            "border_color": "var(commit_annotation_fg_4_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_4)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_5"]}],
-            "color": "var(commit_annotation_fg_4)",
-            "border_color": "var(commit_annotation_fg_4_border)",
-            "background_color": "var(commit_annotation_bg_4)",
-        },
-        {
-            "class": "commit_annotation",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
-            "color": "var(commit_annotation_fg_5)",
-            "background_color": "var(commit_annotation_bg_5)",
-            "border_color": "var(commit_annotation_fg_5_border)"
-
-        },
-        {
-            "class": "commit_annotation branch head",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
-            "color": "var(background)",
-            "background_color": "var(commit_annotation_bg_inverted_5)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_6"]}],
-            "color": "var(commit_annotation_fg_5)",
-            "border_color": "var(commit_annotation_fg_5_border)",
-            "background_color": "var(commit_annotation_bg_5)",
-        },
-        {
-            "class": "commit_annotation",
+            "class": "commit_annotation bordered",
             "parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
-            "color": "var(commit_annotation_fg_6)",
-            "background_color": "var(commit_annotation_bg_6)",
-            "border_color": "var(commit_annotation_fg_6_border)"
+            "border_color": "var(commit_annotation_fg_6_border)",
         },
         {
             "class": "commit_annotation branch head",
             "parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
-            "color": "var(background)",
             "background_color": "var(commit_annotation_bg_inverted_6)",
         },
         {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_7"]}],
-            "color": "var(commit_annotation_fg_6)",
-            "border_color": "var(commit_annotation_fg_6_border)",
-            "background_color": "var(commit_annotation_bg_6)",
-        },
-        {
-            "class": "commit_annotation",
+            "class": "commit_annotation bordered",
             "parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
-            "color": "var(commit_annotation_fg_7)",
-            "background_color": "var(commit_annotation_bg_7)",
-            "border_color": "var(commit_annotation_fg_7_border)"
+            "border_color": "var(commit_annotation_fg_7_border)",
         },
         {
             "class": "commit_annotation branch head",
             "parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
-            "color": "var(background)",
             "background_color": "var(commit_annotation_bg_inverted_7)",
-        },
-        {
-            "class": "commit_annotation_condensed",
-            "parents": [{"class": "commit_annotations", "attributes": ["column_8"]}],
-            "color": "var(commit_annotation_fg_7)",
-            "border_color": "var(commit_annotation_fg_7_border)",
-            "background_color": "var(commit_annotation_bg_7)",
         },
         {
             "class": "stash_annotation",
@@ -464,15 +304,9 @@
             "border_color": "var(stash_ann_border)",
         },
         {
-            "class": "tag_annotation_container",
-            "content_margin": [4, 0],
-            "background_color": "var(tag_ann_bg)",
-            "border_color": "var(tag_ann_border)",
-        },
-        {
             "class": "tag_annotation_icon",
             "layer0.opacity": 1,
-            "layer0.tint": "var(yellow)",
+            "layer0.tint": "var(--background)",
         },
         {
             "class": "tag_annotation",
