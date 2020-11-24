@@ -16,6 +16,19 @@ folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file
     "theme": "Dracula.sublime-theme"
 ```
 
+## Alternative Theme: Alucard
+
+We also provide an additional theme called `Dracula (Alucard)`. Instead of of using the `Dracula.sublime-color-scheme`
+provided by our [color scheme package](https://github.com/facelessuser/sublime-dracula-scheme), it uses the
+`Dracula (Alucard).sublime-color-scheme` provided by that same package. The Alucard color scheme deviates from Dracula
+"proper" by making some minor adjustments to the color palette. Mainly it uses different colors for line highlight which
+doesn't actually look as good with the background and makes comments more difficult to read. If you don't mind a slight
+deviation from Dracula "proper" you can use this theme:
+
+```js
+    "theme": "Dracula (Alucard).sublime-theme"
+```
+
 ## Dracula Pro?
 
 Dracula Pro changed up the color palette a bit and added new variants such as Buffy, Van Helsing, and others. Dracula
