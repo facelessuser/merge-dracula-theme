@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.0
+
+- **NEW**: Added Alucard theme, a custom tweak of the classic Dracula which fixes issues with selections and such that
+  exist in Dracula proper.
+
 ## 1.5.8
 
 - **FIX**: Fix labels to match Merge's latest label style iteration.
