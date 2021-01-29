@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.1.dev
+
+- **NEW**: Patched to work with Sublime Merge 2042+.
+
 ## 1.6.0
 
 - **NEW**: Added Alucard theme, a custom tweak of the classic Dracula which fixes issues with selections and such that
