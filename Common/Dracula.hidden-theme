@@ -28,7 +28,7 @@
         "dark_gray-lightest": "color(var(--background) s(20%) l(27%))",
         "dark_gray-light": "color(var(--background) s(20%) l(22%))",
         "dark_gray": "color(var(--background) s(20%) l(15%))",
-        "dark_gray-dark": "color(var(--background) s(20%) l(10%))",
+        "dark_gray-dark": "color(var(--background) l(10%))",
         "dark_gray-darkest": "color(var(--background) s(18%) l(5%))",
 
         // Labels
@@ -198,7 +198,7 @@
 
         // Tabs
         "tab_bar_bg": "var(dark_gray-dark)",
-        "tab_separator_bg": "var(dark_gray-light)",
+        "tab_separator_bg": "var(dark_gray-lightest)",
 
         // Radio buttons
         "radio_back": "var(--background)",
@@ -253,7 +253,7 @@
 
         // Tabs
         "repository_tab_bar_bg": "var(dark_gray-dark)",
-        "repository_tab_bar_border_bg": "var(medium_gray)",
+        "repository_tab_bar_border_bg": "var(dark_gray-lightest)",
 
         "file_badge_created_fg": "var(green)",
         "file_badge_deleted_fg": "var(pink)",
@@ -268,6 +268,17 @@
     },
     "rules":
     [
+        // {
+        //     "class": "title_bar",
+        //     "bg": "var(--background)",
+        //     "settings": ["themed_title_bar"],
+        // },
+        // {
+        //     "class": "title_bar",
+        //     "attributes": ["panel_visible"],
+        //     "bg": "var(--background)",
+        //     "settings": ["themed_title_bar"],
+        // },
         {
             "class": "overlay_container_control",
             "layer0.opacity": 0.6,
@@ -733,10 +744,9 @@
             "layer0.opacity": 0.6,
             "layer0.tint": "var(white)"
         },
-
         {
             "class": "tab_control",
-            "layer3.opacity": { "target": 0.2, "speed": 2.0, "interpolation": "smoothstep" },
+            "layer3.opacity": 1.0,
         }
     ]
 }

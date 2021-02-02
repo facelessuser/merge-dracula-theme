@@ -1,8 +1,10 @@
 # Changelog
 
-## 1.6.1.dev
+## 1.7.0
 
-- **NEW**: Patched to work with Sublime Merge 2042+.
+- **NEW**: Active repo tab shows open folder icon.
+- **FIX**: Patched to work with Sublime Merge 2042+.
+- **FIX**: Brighten up tab separators to contrast a little better.
 
 ## 1.6.0
 
