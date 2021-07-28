@@ -22,14 +22,9 @@
         "dark_red": "color(var(red) s(25%) l(35%))",
         "dark_blue": "color(var(blue) s(25%) l(35%))",
 
-        "medium_gray-light": "color(var(--background) l(48%))",
         "medium_gray": "color(var(--background) l(58%))",
-        "medium_gray-dark": "color(var(--background) l(38%))",
-        "dark_gray-lightest": "color(var(--background) s(20%) l(27%))",
-        "dark_gray-light": "color(var(--background) s(20%) l(22%))",
         "dark_gray": "color(var(--background) s(20%) l(15%))",
-        "dark_gray-dark": "color(var(--background) l(10%))",
-        "dark_gray-darkest": "color(var(--background) s(18%) l(5%))",
+        "dark_gray-lightest": "color(var(--background) s(20%) l(27%))",
 
         // Labels
         "label_color": "var(text-heading)",
@@ -37,7 +32,7 @@
 
         // Header
         "title_bar_style": "dark",
-        "header_bg": "var(dark_gray-dark)",
+        "header_bg": "var(--background)",
         "header_fg": "var(text-heading)",
         "header_button_bg": "color(var(--background) l(25%))",
         "icon_button_fg": "white",
@@ -55,23 +50,23 @@
         "focus_highlight_color": "var(text)",
 
         // Welcome overlay
-        "welcome_bg": "var(dark_gray-light)",
-        "recent_repositories_row_bg-hover": "color(var(dark_gray-light) l(+ 10%))",
+        "welcome_bg": "color(var(--background) l(- 5%))",
+        "recent_repositories_row_bg-hover": "color(var(--background) l(+ 5%))",
 
         // Preferences Page
-        "preferences_overlay_bg": "var(dark_gray-dark)",
-        "preferences_section_table_bg": "var(dark_gray-light)",
+        "preferences_overlay_bg": "color(var(--background) l(+ 5%))",
+        "preferences_section_table_bg": "var(--background)",
 
         // Side bar
         "location_bar_fg": "var(text)",
         "location_bar_heading_fg": "var(text-heading)",
         "location_bar_heading_shadow": "black",
-        "location_bar_row_bg-hover": "color(var(dark_gray-lightest) l(+ 5%))",
+        "location_bar_row_bg-hover": "color(var(--background) l(+ 7%))",
         "disclosure_fg": "var(text)",
 
         // Commit list
-        "commit_list_bg": "var(dark_gray-light)",
-        "commit_row_bg-hover": "color(var(dark_gray-light) l(+ 10%))",
+        "commit_list_bg": "color(var(--background) l(+ 3%))",
+        "commit_row_bg-hover": "color(var(--background) l(+ 10%) s(+ 3%))",
         "commit_summary_fg-primary": "var(text-heading)",
         "commit_summary_fg-secondary": "var(text-light)",
         "commit_color_count": 8,
@@ -110,7 +105,7 @@
         "commit_annotation_bg_inverted_7": "color(var(commit_edge_7))",
 
         // Location Bar
-        "side_bar_container_bg": "var(dark_gray-lightest)",
+        "side_bar_container_bg": "var(--background)",
 
         // Table of Contents
         "table_of_contents_bg": "var(dark_gray)",
@@ -153,10 +148,10 @@
         "hunk_button_fg": "white",
         "hunk_button_shadow": "color(black a(0.5))",
 
-        "file_header_bg": "var(dark_gray-light)",
-        "file_header_bg-hover": "color(var(dark_gray-light) l(+ 3%))",
+        "file_header_bg": "color(var(--background) l(+ 5%))",
+        "file_header_bg-hover": "color(var(--background) l(+ 10%))",
 
-        "hunk_header_bg": "var(dark_gray-lightest)",
+        "hunk_header_bg": "color(var(--background) l(+ 12%))",
 
         "deleted_icon_fg": "var(text)",
         "deleted_header_bg": "var(dark_red)",
@@ -168,8 +163,8 @@
 
         "recent_icon_fg": "var(yellow)",
         "recent_icon_bg": "transparent",
-        "untracked_header_bg": "color(var(--background) s(- 10%) l(20%))",
-        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 3%))",
+        "untracked_header_bg": "color(var(--background) s(- 5%) l(+ 15%))",
+        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 5%))",
 
         "full_context_icon_bg": "var(text)",
 
@@ -197,8 +192,8 @@
         "toggle_button_fg_selected": "var(text-heading)",
 
         // Tabs
-        "tab_bar_bg": "var(dark_gray-dark)",
-        "tab_separator_bg": "var(dark_gray-lightest)",
+        "tab_bar_bg": "var(--background)",
+        "tab_separator_bg": "var(--background)",
 
         // Radio buttons
         "radio_back": "var(--background)",
@@ -211,7 +206,7 @@
         "checkbox_border-selected": "var(--accent)",
 
         // Dialogs
-        "dialog_bg": "var(dark_gray-dark)",
+        "dialog_bg": "var(--background)",
         "dialog_button_bg": "color(var(white) a(20%))",
 
         // Progress bar
@@ -220,7 +215,7 @@
 
         // Quick panel
         "quick_panel_bg": "var(--background)",
-        "quick_panel_row_bg": "color(var(white) a(10%))",
+        "quick_panel_row_bg": "color(var(--background) l(+ 7%))",
         "quick_panel_fg": "var(text)",
         "quick_panel_fg-match": "var(--accent)",
         "quick_panel_fg-selected": "var(text)",
@@ -234,9 +229,6 @@
         "image_diff_checkerboard_alt_bg": "color(var(--background) l(+ 10%))",
         "image_metadata_label_bg": "color(var(white) a(20%))",
 
-        // Switch repository window
-        "switch_repo_bg": "var(dark_gray-light)",
-
         // Hints
         "failed_label_fg": "var(--background)",
 
@@ -249,11 +241,11 @@
 
         // Merge Helper
         "merge_helper_highlight_bg": "var(dark_gray-lightest)",
-        "console_border": "var(dark_gray-light)",
+        "console_border": "color(var(--background) l(+ 10%))",
 
         // Tabs
-        "repository_tab_bar_bg": "var(dark_gray-dark)",
-        "repository_tab_bar_border_bg": "var(dark_gray-lightest)",
+        "repository_tab_bar_bg": "var(--background)",
+        "repository_tab_bar_border_bg": "var(--background)",
 
         "file_badge_created_fg": "var(green)",
         "file_badge_deleted_fg": "var(pink)",
@@ -280,9 +272,51 @@
         //     "settings": ["themed_title_bar"],
         // },
         {
+            "class": "tab_control",
+            "layer3.opacity": 0.0,
+            "layer2.opacity": 0.0,
+            "layer2.draw_center": false,
+            "layer2.inner_margin": [0, 0, 0, 1],
+            "layer2.tint": "var(--accent)"
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["hover"],
+            "layer2.opacity": 0.5
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer2.opacity": 1.0
+        },
+        // File Tabs
+        {
+            "class": "tab_separator",
+            "layer0.inner_margin": [0, 0],
+            "content_margin": [0, 0, 0, 0]
+        },
+        {
+            "class": "tab",
+            "layer0.tint": "var(--background)",
+            "layer2.draw_center": false,
+            "layer2.inner_margin": [0, 0, 0, 1],
+            "layer2.tint": "var(--accent)",
+            "layer2.opacity": 0.0
+        },
+        {
+            "class": "tab",
+            "attributes": ["hover"],
+            "layer2.opacity": 0.5
+        },
+        {
+            "class": "tab",
+            "attributes": ["selected"],
+            "layer2.opacity": 1.0
+        },
+        {
             "class": "overlay_container_control",
             "layer0.opacity": 0.6,
-            "layer0.tint": "var(dark_gray-darkest)"
+            "layer0.tint": "color(var(--background) l(+ 10%))"
         },
         {
             "class": "commit_annotations",
@@ -343,7 +377,18 @@
         {
             "class": "tab_close_button",
             "layer0.texture": "Theme - Default/common/tab_close.png",
-            "layer0.tint": "color(var(white) a(0.7))"
+            "layer0.tint": "color(var(white) a(0.7))",
+            "layer0.opacity": 0.0
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "layer0.opacity": 0.5
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+            "layer0.opacity": 0.7
         },
         {
             "class": "icon_folder",
@@ -351,13 +396,13 @@
         },
         {
             "class": "info_area",
-            "layer0.opacity": 0.2,
-            "layer0.tint": "var(medium_gray)",
+            "layer0.opacity":0.5,
+            "layer0.tint": "var(header_button_bg)",
         },
         {
             "class": "info_area",
             "attributes": ["hover"],
-            "layer0.opacity": 0.3,
+            "layer0.opacity": 0.75,
         },
         {
             "class": "location_bar_heading",
@@ -445,7 +490,7 @@
         },
         {
             "class": "branch_stat",
-            "layer0.tint": "color(var(white) a(0.2))",
+            "layer0.tint": "color(var(white) a(0.5))",
         },
         {
             "class": "branch_stat_label",
@@ -743,10 +788,6 @@
             ],
             "layer0.opacity": 0.6,
             "layer0.tint": "var(white)"
-        },
-        {
-            "class": "tab_control",
-            "layer3.opacity": 1.0,
         }
     ]
 }

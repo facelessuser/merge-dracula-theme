@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.8.0
+
+- **NEW**: Redesigned look.
+
 ## 1.7.0
 
 - **NEW**: Active repo tab shows open folder icon.
