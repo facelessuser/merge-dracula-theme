@@ -2,7 +2,7 @@
 
 [Dracula](https://draculatheme.com/) theme for Sublime Merge 2.
 
-Requires related [color scheme](https://github.com/facelessuser/sublime-dracula-scheme). It color scheme is based off
+Requires related [color scheme](https://github.com/facelessuser/sublime-dracula-scheme). The color scheme is based off
 the Sublime Mariana color scheme, but uses the classic Dracula color palette. We do not use the official Dracula color
 scheme as we feel ours, which uses the newer color scheme format, provides better scoping with Sublime Text 4 and
 Sublime Merge 2. Our theme also expects certain variables that are only provided in our specific implementation of the
