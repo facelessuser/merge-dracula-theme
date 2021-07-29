@@ -1,0 +1,6 @@
+{
+    "name": "Dracula Pro (Morbius)",
+    "extends": "Dracula.hidden-theme",
+    "variables": {},
+    "rules": []
+}

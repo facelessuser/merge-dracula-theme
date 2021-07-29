@@ -1,0 +1,6 @@
+{
+    "name": "Dracula Pro (Blade)",
+    "extends": "Dracula.hidden-theme",
+    "variables": {},
+    "rules": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Dracula Pro",
+    "extends": "Dracula.hidden-theme",
+    "variables": {},
+    "rules": []
+}

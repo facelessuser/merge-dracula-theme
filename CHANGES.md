@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0
+
+- **NEW**: Add Pro variant themes, though will be unusable to the public as the required color schemes are currently
+  private. Users can use the provided public color schemes to create the necessary Pro color scheme variants if desired.
+
 ## 1.9.0
 
 - **NEW**: Some subtle interface color tweaks.
