@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.0
+
+- **NEW**: Some subtle interface color tweaks.
+
 ## 1.8.0
 
 - **NEW**: Redesigned look.
