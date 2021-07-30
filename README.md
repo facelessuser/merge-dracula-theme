@@ -95,3 +95,69 @@ Dracula Pro (Morbius)
 Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
+
+## How to Create Pro Variants?
+
+Assuming you have access to the official Pro variant colors, Merge requires the following color schemes to be found:
+
+- Pro: `Dracula Pro.sublime-color-scheme`
+- Buffy: `Dracula Pro (Buffy).sublime-color-scheme`
+- Blade: `Dracula Pro (Blade).sublime-color-scheme`
+- Lincoln: `Dracula Pro (Lincoln).sublime-color-scheme`
+- Morbius: `Dracula Pro (Morbius).sublime-color-scheme`
+- Van Helsing: `Dracula Pro (Van Helsing).sublime-color-scheme`
+
+Using the `Dracula (Alucard).sublime-color-scheme` as a base (found [here](https://github.com/facelessuser/sublime-dracula-scheme/blob/master/Dracula%20(Alucard)),
+simply change the palette colors below to the appropriate colors. The official Dracula color scheme doesn't really
+specify a `blue` color, and in the classic color scheme, we specified the comment color as the `blue`, but in the Pro
+color schemes, it is defined as a color with the dominant hue as used in the Van Helsing variant (background hue) but
+lightened and saturated to match the other primary colors. `blue` is not really a primary color in the Dracula palette,
+but is used as an accent color for Van Helsing and Alucard and as an additional branch color in Merge etc.
+
+```js
+        // Static palette colors. These are constant through all variations.
+        "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
+        "red": "hsl(0, 100%, 67%)",        // #ff5555
+        "orange": "hsl(31, 100%, 71%)",    // #ffb86c
+        "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
+        "green": "hsl(135, 94%, 65%)",     // #50fa7b
+        "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
+        "blue": "hsl(225, 100%, 75%)",     // #809fff
+        "pink": "hsl(326, 100%, 74%)",     // #ff79c6
+        "purple": "hsl(265, 89%, 78%)",    // #bd93f9
+```
+
+Then, simply change the "Variant Specific" as shown below. The dominant color for the Pro variant should be used in any
+place noted as `var(dominant-color)`. For instance, if you were creating the Blade variant, you'd change 
+`var(dominant-color)` to `var(cyan)`. Additionally, we've left `background` blank. Simply insert the appropriate
+`background` color for the given Pro variant.
+
+```js
+        // Variant specific colors (change these for variants)
+        "background": "",
+        "selection": "color(var(background) s(15%) l(30%))",
+        "comment": "color(var(dominant-color) s(25%) l(55%))",
+        "line-highlight": "color(var(background) s(25%) l(25%))",
+        "accent": "var(dominant-color)",
+```
+
+The dominant colors for the given Pro variant are found listed below:
+
+- Pro: `purple`
+- Buffy: `pink`
+- Blade: `cyan`
+- Lincoln: `yellow`
+- Morbius: `red`
+- Van Helsing: `blue`
+
+Alucard is a little different from the other Pro variants and simply uses the following in the Pro variant. It uses
+`blue` as its accent color, but we manually specify classic `comment` color and `background`.
+
+```js
+        // Variant specific colors (change these for variants)
+        "background": "hsl(231, 15%, 18%)",
+        "selection": "color(var(background) s(15%) l(30%))",
+        "comment": "hsl(225, 27%, 51%)",
+        "line-highlight": "color(var(background) s(25%) l(25%))",
+        "accent": "var(blue)",
+```
