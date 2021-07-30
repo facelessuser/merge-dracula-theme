@@ -130,13 +130,14 @@ but is used as an accent color for Van Helsing and Alucard and as an additional 
 Then, simply change the "Variant Specific" as shown below. The dominant color for the Pro variant should be used in any
 place noted as `var(dominant-color)`. For instance, if you were creating the Blade variant, you'd change 
 `var(dominant-color)` to `var(cyan)`. Additionally, we've left `background` blank. Simply insert the appropriate
-`background` color for the given Pro variant.
+`background` color for the given Pro variant. If you prefer a different accent color, feel free to use something
+different.
 
 ```js
         // Variant specific colors (change these for variants)
         "background": "",
         "selection": "color(var(background) s(15%) l(30%))",
-        "comment": "color(var(dominant-color) s(25%) l(55%))",
+        "comment": "color(var(background) s(25%) l(55%))",
         "line-highlight": "color(var(background) s(25%) l(25%))",
         "accent": "var(dominant-color)",
 ```
