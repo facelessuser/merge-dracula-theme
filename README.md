@@ -63,8 +63,6 @@ If at some future time, the Pro public scheme becomes available to the public, o
 without repercussions, we will be happy to make our Pro color scheme variants public allowing the use of the Merge Pro
 variants without any manual workarounds.
 
-If you wish to create your own Pro color schemes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants).
-
 Assuming a proper color scheme is provided, these are what the available Pro themes look like. Alucard is an unofficial
 theme which provides a classic look, but uses the newer Pro palette.
 
@@ -95,3 +93,7 @@ Dracula Pro (Morbius)
 Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
+
+## How to Create Pro Variants?
+
+If you wish to create your own Pro color schemes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants).
