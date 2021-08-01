@@ -96,4 +96,6 @@ Dracula Pro (Van Helsing)
 
 ## How to Create Pro Variants?
 
-If you wish to create your own Pro color schemes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants).
+If you wish to create your own Pro color schemes to enable Pro Merge themes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants).
+to create the needed color schemes. Once you have properly named Pro color schemes, you can switch to any of the Pro
+Merge theme variants.
