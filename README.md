@@ -12,7 +12,7 @@ Dracula color scheme.
 
 ## Install
 
-Assuming the required color scheme is installed, git clone project or download into your Sublime Merge `Packages`
+Assuming the required color scheme is installed, git clone the project or download it into your Sublime Merge `Packages`
 folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file to use the Dracula theme:
 
 ```js
@@ -23,7 +23,7 @@ folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file
 
 We also provide an additional theme called `Dracula (Alucard)`. Instead of of using the `Dracula.sublime-color-scheme`
 provided by our [color scheme package](https://github.com/facelessuser/sublime-dracula-scheme), it uses the
-`Dracula (Alucard).sublime-color-scheme` provided by that same package. The Alucard color scheme deviates from Dracula
+`Dracula (Alucard).sublime-color-scheme` provided by the same package. The Alucard color scheme deviates from Dracula
 "proper" by making some minor adjustments to the color palette. Mainly, it uses different colors for line highlight.
 
 In the past, some people have complained about Dracula's default line highlight. Claims have been made that it can make
@@ -47,11 +47,9 @@ if we can make the variant color schemes public without repercussions.
 Dracula Pro changed up the color palette a bit and added new variants such as Buffy, Van Helsing, and others. The
 official Dracula Pro theme is also not free.
 
-While we feel we have reversed engineered the color palette, and do have Pro variants of the Dracula color scheme on a
-private repository, we are uncertain if we can legally release our Pro variant color schemes. Without these Pro variants
-of the color scheme, the Pro Merge theme variants are currently unusable by the general public. The Pro Merge themes
-do not provide the Dracula palettes themselves as they rely on the color scheme to provide the colors, so they do not
-violate any licensing. So they are included, but require a valid color scheme to be functional.
+While we feel we have been able to reverse engineer the Pro color palette close enough, and do have Pro variants of the Dracula color scheme on a private repository, we are uncertain if we can legally release our Pro variant color schemes. Without these Pro variants of the color scheme, the Pro Merge themes are currently unusable by the general public. The
+Pro Merge themes do not provide the Dracula palettes themselves as they rely on the color scheme to provide the colors,
+so they do not violate any licensing. So they are included, but require a valid color scheme to be functional.
 
 For those who've acquired the official Dracula Pro theme (which we are **not** affiliated with) through purchasing, the
 current, public Dracula color scheme that we provide can be altered with the official Dracula Pro palette. As long as
@@ -64,6 +62,8 @@ color schemes as it treats line highlights in a way that better represents what 
 If at some future time, the Pro public scheme becomes available to the public, or we feel we can safely release them
 without repercussions, we will be happy to make our Pro color scheme variants public allowing the use of the Merge Pro
 variants without any manual workarounds.
+
+If you wish to create your own Pro color schemes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants).
 
 Assuming a proper color scheme is provided, these are what the available Pro themes look like. Alucard is an unofficial
 theme which provides a classic look, but uses the newer Pro palette.
@@ -95,72 +95,3 @@ Dracula Pro (Morbius)
 Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
-
-## How to Create Pro Variants?
-
-Assuming you have access to the official Pro variant colors, Merge requires the following color schemes to be found:
-
-- Pro: `Dracula Pro.sublime-color-scheme`
-- Buffy: `Dracula Pro (Buffy).sublime-color-scheme`
-- Blade: `Dracula Pro (Blade).sublime-color-scheme`
-- Lincoln: `Dracula Pro (Lincoln).sublime-color-scheme`
-- Morbius: `Dracula Pro (Morbius).sublime-color-scheme`
-- Van Helsing: `Dracula Pro (Van Helsing).sublime-color-scheme`
-
-Using the `Dracula (Alucard).sublime-color-scheme` as a base (found [here](https://github.com/facelessuser/sublime-dracula-scheme/blob/master/Dracula%20(Alucard)),
-simply change the palette colors below to the appropriate colors. The official Dracula color scheme doesn't really
-specify a `blue` color, and in the classic color scheme, we specified the comment color as the `blue`, but in the Pro
-color schemes, it is defined as a color with the dominant hue as used in the Van Helsing variant (background hue) but
-lightened and saturated to match the other primary colors. `blue` is not really a primary color in the Dracula palette,
-but is used as an accent color for Van Helsing and Alucard and as an additional branch color in Merge etc.
-
-```js
-        // Static palette colors. These are constant through all variations.
-        "foreground": "hsl(60, 30%, 96%)", // #f8f8f2
-        "red": "hsl(0, 100%, 67%)",        // #ff5555
-        "orange": "hsl(31, 100%, 71%)",    // #ffb86c
-        "yellow": "hsl(65, 92%, 76%)",     // #f1fa8c
-        "green": "hsl(135, 94%, 65%)",     // #50fa7b
-        "cyan": "hsl(191, 97%, 77%)",      // #8be9fd
-        "blue": "hsl(225, 100%, 75%)",     // #809fff
-        "pink": "hsl(326, 100%, 74%)",     // #ff79c6
-        "purple": "hsl(265, 89%, 78%)",    // #bd93f9
-```
-
-Then, simply change the "Variant Specific" as shown below. The dominant color for the Pro variant should be used in any
-place noted as `var(dominant-color)`. For instance, if you were creating the Blade variant, you'd change
-`var(dominant-color)` to `var(cyan)`. Additionally, we've left `background` blank. Simply insert the appropriate
-`background` color for the given Pro variant.
-
-```js
-        // Variant specific colors (change these for variants)
-        "background": "",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "comment": "color(var(background) s(25%) l(55%))",
-        "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "var(dominant-color)",
-```
-
-If you prefer a different accent color, feel free to use something different. Also, we use a close approximation of
-what comments probably are, but if you have the exact comment color, feel free to use that instead.
-
-The dominant colors for the given Pro variant are found listed below:
-
-- Pro: `purple`
-- Buffy: `pink`
-- Blade: `cyan`
-- Lincoln: `yellow`
-- Morbius: `red`
-- Van Helsing: `blue`
-
-Alucard is a little different from the other Pro variants and simply uses the following in the Pro variant. It uses
-`blue` as its accent color, but we manually specify classic `comment` color and `background`.
-
-```js
-        // Variant specific colors (change these for variants)
-        "background": "hsl(231, 15%, 18%)",
-        "selection": "color(var(background) s(15%) l(30%))",
-        "comment": "hsl(225, 27%, 51%)",
-        "line-highlight": "color(var(background) s(25%) l(25%))",
-        "accent": "var(blue)",
-```
