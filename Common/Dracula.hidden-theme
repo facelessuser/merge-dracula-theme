@@ -384,6 +384,20 @@
         {
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+            "layer0.opacity": 0.5
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+            "layer0.texture": "Theme - Merge/tab_dirty.png",
+            "layer0.tint": "color(var(red) a(0.7))",
+            "layer0.opacity": 0.7
+        },
+        {
+            "class": "tab_close_button",
+            "layer0.texture": "Theme - Default/common/tab_close.png",
+            "attributes": ["hover"],
+            "layer0.tint": "color(var(white) a(0.7))",
             "layer0.opacity": 0.7
         },
         {

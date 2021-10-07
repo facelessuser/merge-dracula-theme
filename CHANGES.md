@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+- **NEW**: Add support for dirty indicators when tab has uncommitted changes.
+
 ## 2.0.0
 
 - **NEW**: Add Pro variant themes, though will be unusable to the public as the required color schemes are currently
