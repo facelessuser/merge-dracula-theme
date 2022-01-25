@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.1
+
+- **FIX**: Fix deleted/inserted line number colors being inverted.
+
 ## 2.1.0
 
 - **NEW**: Add support for dirty indicators when tab has uncommitted changes.
