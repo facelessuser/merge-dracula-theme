@@ -134,8 +134,8 @@
         "submodule_light_ann_fg": "var(text)",
         "submodule_light_ann_bg": "color(var(white) a(20%))",
 
-        "inserted_ann_bg": "color(var(pink) blend(var(darken) 35%))",
-        "deleted_ann_bg": "color(var(green) blend(var(darken) 35%))",
+        "inserted_ann_bg": "color(var(green) blend(var(darken) 35%))",
+        "deleted_ann_bg": "color(var(pink) blend(var(darken) 35%))",
 
         // Diff headers
         "file_diff_shadow": "color(black a(0.5))",
