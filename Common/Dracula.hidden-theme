@@ -221,6 +221,8 @@
         "quick_panel_path_fg-selected": "var(text-light)",
         "quick_panel_path_fg-selected-match": "var(--accent)",
 
+        "switch_repo_bg": "var(--background)",
+
         // Image Diffs
         "image_diff_checkerboard_alt_bg": "color(var(--background) l(+ 10%))",
         "image_metadata_label_bg": "color(var(white) a(20%))",

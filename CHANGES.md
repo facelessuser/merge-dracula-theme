@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2
+
+- **FIX**: Fix project switch panel color on recent Merge version.
+
 ## 2.1.1
 
 - **FIX**: Fix deleted/inserted line number colors being inverted.
