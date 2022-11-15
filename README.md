@@ -6,7 +6,7 @@ Requires related [color scheme](https://github.com/facelessuser/sublime-dracula-
 the Sublime Mariana color scheme, but uses the classic Dracula color palette. We do not use the official Dracula color
 scheme as we feel ours, which uses the newer color scheme format, provides better scoping with Sublime Text 4 and
 Sublime Merge 2. Our theme also expects certain variables that are only provided in our specific implementation of the
-Dracula color scheme.
+Dracula color scheme. Additionally, we also provide Dracula Pro inspired variants in our color scheme package as well.
 
 ![Sublime Merge](screenshots/Merge%20-%20Dracula.png)
 
@@ -38,64 +38,51 @@ or you are a Dracula purist, then the classic theme may be the preferred option.
     "theme": "Dracula (Alucard).sublime-theme"
 ```
 
-## Dracula Pro?
+## Dracula Pro
 
-Do we support Dracula Pro? Yes and no. In short, yes we provide the themes, but they will not work for the general
-public as the required Pro color schemes are currently private. We do not want our repository taken down and are unsure
-if we can make the variant color schemes public without repercussions.
+**We are not affiliated with Dracula Pro, nor do we condone using the official paid for themes without paying for them,
+but this theme is an original work that uses the Dracula Pro palette, the theme itself is not derived from the source of
+any official Dracula theme.**
 
-Dracula Pro changed up the color palette a bit and added new variants such as Buffy, Van Helsing, and others. The
-official Dracula Pro theme is also not free.
+Sublime Merge supports the Dracula Pro variants that are provided in our [Dracula color schemes](https://github.com/facelessuser/sublime-dracula-scheme).
+The Sublime Merge theme pulls the colors directly from the color schemes. The Pro color schemes were derived via
+inspection of the official [Dracula Pro site](https://draculatheme.com/pro). All the colors are found in the official
+site, and any that were not were derived from the information gathered there.
 
-While we feel we have been able to reverse engineer the Pro color palette close enough, and do have Pro variants of the Dracula color scheme on a private repository, we are uncertain if we can legally release our Pro variant color schemes. Without these Pro variants of the color scheme, the Pro Merge themes are currently unusable by the general public. The
-Pro Merge themes do not provide the Dracula palettes themselves as they rely on the color scheme to provide the colors,
-so they do not violate any licensing. So they are included, but require a valid color scheme to be functional.
+For those who want access to officially supported Dracula themes, they should consider purchasing Dracula pro from the
+official [Dracula Pro site](https://draculatheme.com/pro).
 
-For those who've acquired the official Dracula Pro theme (which we are **not** affiliated with) through purchasing, the
-current, public Dracula color scheme that we provide can be altered with the official Dracula Pro palette. As long as
-Merge can find the color schemes with the name expected by the specific Dracula Pro Merge theme, things should work just
-fine.
+### Dracula Pro (Alucard)
 
-The Alucard color scheme is the best base to use if attempting to create a Pro color scheme from the public Dracula
-color schemes as it treats line highlights in a way that better represents what the Pro color schemes do.
-
-If at some future time, the Pro public scheme becomes available to the public, or we feel we can safely release them
-without repercussions, we will be happy to make our Pro color scheme variants public allowing the use of the Merge Pro
-variants without any manual workarounds.
-
-Assuming a proper color scheme is provided, these are what the available Pro themes look like. Alucard is an unofficial
-theme which provides a classic look, but uses the newer Pro palette.
-
-Dracula Pro:
-
-![Pro](screenshots/Merge%20-%20Pro.png)
-
-Dracula Pro (Alucard)
+The Dracula Pro (Alucard) theme is just like the Alucard theme except it uses the Pro palette and the classic Dracula
+background and comments.
 
 ![Alucard](screenshots/Merge%20-%20Alucard.png)
 
-Dracula Pro (Buffy)
+### Dracula Pro
+
+![Pro](screenshots/Merge%20-%20Pro.png)
+
+### Dracula Pro (Alucard)
+
+![Alucard](screenshots/Merge%20-%20Alucard.png)
+
+### Dracula Pro (Buffy)
 
 ![Buffy](screenshots/Merge%20-%20Buffy.png)
 
-Dracula Pro (Blade)
+### Dracula Pro (Blade)
 
 ![Blade](screenshots/Merge%20-%20Blade.png)
 
-Dracula Pro (Lincoln)
+### Dracula Pro (Lincoln)
 
 ![Lincoln](screenshots/Merge%20-%20Lincoln.png)
 
-Dracula Pro (Morbius)
+### Dracula Pro (Morbius)
 
 ![Morbius](screenshots/Merge%20-%20Morbius.png)
 
-Dracula Pro (Van Helsing)
+### Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
-
-## How to Create Pro Variants?
-
-If you wish to create your own Pro color schemes to enable Pro Merge themes, you can follow the guide [here](https://github.com/facelessuser/sublime-dracula-scheme#how-to-create-pro-variants)
-to create the needed color schemes. Once you have properly named Pro color schemes, you can switch to any of the Pro
-Merge theme variants.

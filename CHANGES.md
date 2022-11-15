@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2
+
+- **NEW**: Adjust commit list background color.
+- **NEW**: Document that the Pro color scheme variants now ship with our color scheme package.
+
 ## 2.1.2
 
 - **FIX**: Fix project switch panel color on recent Merge version.

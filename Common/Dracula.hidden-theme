@@ -61,7 +61,7 @@
         "disclosure_fg": "var(text)",
 
         // Commit list
-        "commit_list_bg": "color(var(--background) l(+ 3%))",
+        "commit_list_bg": "color(var(--background))",
         "commit_row_bg-hover": "color(var(--background) l(+ 10%) s(+ 3%))",
         "commit_summary_fg-primary": "var(text-heading)",
         "commit_summary_fg-secondary": "var(text-light)",
