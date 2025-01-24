@@ -15,8 +15,12 @@ Dracula color scheme. Additionally, we also provide Dracula Pro inspired variant
 Assuming the required color scheme is installed, git clone the project or download it into your Sublime Merge `Packages`
 folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file to use the Dracula theme:
 
-```js
-    "theme": "Dracula.sublime-theme"
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula.sublime-merge-theme"
+}
 ```
 
 ## Alternative Theme: Alucard
@@ -34,8 +38,12 @@ Alucard uses a line highlight color that looks more subtle against the backgroun
 other respects, the theme looks exactly like the default Dracula theme. So if line highlight is not enabled in Merge,
 or you are a Dracula purist, then the classic theme may be the preferred option.
 
-```js
-    "theme": "Dracula (Alucard).sublime-theme"
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula (Alucard).sublime-merge-theme"
+}
 ```
 
 ## Dracula Pro
