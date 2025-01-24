@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.3
+
+- **NEW**: Rename `.sublime-theme` to `.sublime-merge-theme`.
+
 ## 2.2
 
 - **NEW**: Adjust commit list background color.
