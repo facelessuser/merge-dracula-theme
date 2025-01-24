@@ -1,0 +1,15 @@
+*                               text=auto
+
+.github/                        export-ignore
+screenshots/                    export-ignore
+
+.gitattributes                  export-ignore
+.gitignore                      export-ignore
+CHANGES.md                      export-ignore
+
+*.sublime-theme                 linguist-language=JSON-with-Comments
+*.hidden-theme                  linguist-language=JSON-with-Comments
+
+*.sublime-merge-theme           linguist-language=JSON-with-Comments
+
+*.sublime-settings              linguist-language=JSON-with-Comments
