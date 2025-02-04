@@ -1,49 +1,59 @@
 # Changelog
 
+## 2.4
+
+-   **NEW**: Rename our custom Alucard to Nosferatu in order to avoid conflict with the offical Dracula Pro light theme
+    that shares the same name.
+-   **NEW**: Non-pro Alucard has been removed and line highlight improvements are now included in classic Dracula by
+    default.
+-   **NEW**: Add our take on the official Dracula Pro Alucard light theme.
+-   **NEW**: Minor tweaks to the dark themes.
+
 ## 2.3
 
-- **NEW**: Rename `.sublime-theme` to `.sublime-merge-theme`.
+-   **NEW**: Rename `.sublime-theme` to `.sublime-merge-theme`.
 
 ## 2.2
 
-- **NEW**: Adjust commit list background color.
-- **NEW**: Document that the Pro color scheme variants now ship with our color scheme package.
+-   **NEW**: Adjust commit list background color.
+-   **NEW**: Document that the Pro color scheme variants now ship with our color scheme package.
 
 ## 2.1.2
 
-- **FIX**: Fix project switch panel color on recent Merge version.
+-   **FIX**: Fix project switch panel color on recent Merge version.
 
 ## 2.1.1
 
-- **FIX**: Fix deleted/inserted line number colors being inverted.
+-   **FIX**: Fix deleted/inserted line number colors being inverted.
 
 ## 2.1.0
 
-- **NEW**: Add support for dirty indicators when tab has uncommitted changes.
+-   **NEW**: Add support for dirty indicators when tab has uncommitted changes.
 
 ## 2.0.0
 
-- **NEW**: Add Pro variant themes, though will be unusable to the public as the required color schemes are currently
-  private. Users can use the provided public color schemes to create the necessary Pro color scheme variants if desired.
+-   **NEW**: Add Pro variant themes, though will be unusable to the public as the required color schemes are currently
+    private. Users can use the provided public color schemes to create the necessary Pro color scheme variants if
+    desired.
 
 ## 1.9.0
 
-- **NEW**: Some subtle interface color tweaks.
+-   **NEW**: Some subtle interface color tweaks.
 
 ## 1.8.0
 
-- **NEW**: Redesigned look.
+-   **NEW**: Redesigned look.
 
 ## 1.7.0
 
-- **NEW**: Active repo tab shows open folder icon.
-- **FIX**: Patched to work with Sublime Merge 2042+.
-- **FIX**: Brighten up tab separators to contrast a little better.
+-   **NEW**: Active repo tab shows open folder icon.
+-   **FIX**: Patched to work with Sublime Merge 2042+.
+-   **FIX**: Brighten up tab separators to contrast a little better.
 
 ## 1.6.0
 
-- **NEW**: Added Alucard theme, a custom tweak of the classic Dracula which fixes issues with selections and such that
-  exist in Dracula proper.
+-   **NEW**: Added Alucard theme, a custom tweak of the classic Dracula which fixes issues with selections and such that
+    exist in Dracula proper.
 
 ## 1.5.8
 

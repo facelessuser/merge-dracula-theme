@@ -2,11 +2,12 @@
     "extends": "Merge.sublime-theme",
     "variables":
     {
-        "white": "hsl(0, 0%, 95%)",
-        "text-heading": "var(white)",
-        "text": "color(var(white) a(- 30%))",
+        "black": "#1f1f1f",
+        "text-heading": "var(black)",
+        "text": "color(var(black) a(- 30%))",
         "text-light": "color(var(text) a(- 40%))",
         "darken": "hsl(0, 0%, 13%)",
+        "lighten": "hsl(0, 0%, 100%)",
 
         "red": "var(--redish)",
         "orange": "var(--orangish)",
@@ -16,24 +17,25 @@
         "blue": "var(--bluish)",
         "pink": "var(--pinkish)",
         "purple": "var(--purplish)",
+        "selection-highlight": "#DCDEEF",
 
         // Alias for pink
         "magenta": "var(pink)",
-        "dark_red": "color(var(red) s(25%) l(35%))",
-        "dark_blue": "color(var(blue) s(25%) l(35%))",
+        "dark_red": "color(var(red) s(25%) l(80%))",
+        "dark_blue": "color(var(blue) s(25%) l(80%))",
 
         // Labels
         "label_color": "var(text-heading)",
         "help_label_color": "color(var(text-heading) a(0.6))",
 
         // Header
-        "title_bar_style": "dark",
+        // "title_bar_style": "light",
         "header_bg": "var(--background)",
         "header_fg": "var(text-heading)",
-        "header_button_bg": "color(var(--background) l(25%))",
-        "icon_button_fg": "white",
+        "header_button_bg": "color(var(--background) l(- 10%))",
+        "icon_button_fg": "var(black)",
 
-        "info_shadow": "color(black a(0.2))",
+        "info_shadow": "color(white a(0.2))",
 
         "diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
         "diverged_button_bg": "var(button_bg)",
@@ -47,7 +49,7 @@
 
         // Welcome overlay
         "welcome_bg": "color(var(--background) l(- 5%))",
-        "recent_repositories_row_bg-hover": "color(var(--background) l(+ 5%))",
+        "recent_repositories_row_bg-hover": "var(selection-highlight)",
 
         // Preferences Page
         "preferences_overlay_bg": "color(var(--background) l(+ 5%))",
@@ -56,13 +58,13 @@
         // Side bar
         "location_bar_fg": "var(text)",
         "location_bar_heading_fg": "var(text-heading)",
-        "location_bar_heading_shadow": "black",
-        "location_bar_row_bg-hover": "color(var(--background) l(+ 30%) a(0.25))",
+        "location_bar_heading_shadow": "white",
+        "location_bar_row_bg-hover": "var(selection-highlight)",
         "disclosure_fg": "var(text)",
 
         // Commit list
         "commit_list_bg": "color(var(--background))",
-        "commit_row_bg-hover": "color(var(--background) l(+ 10%) s(+ 3%))",
+        "commit_row_bg-hover": "var(selection-highlight)",
         "commit_summary_fg-primary": "var(text-heading)",
         "commit_summary_fg-secondary": "var(text-light)",
         "commit_color_count": 8,
@@ -79,7 +81,7 @@
         // Annotations
         "commit_annotation_fg": "var(text)",
         "commit_annotation_fg_inverted": "var(--background)",
-        "commit_annotation_bg": "color(white a(20%))",
+        "commit_annotation_bg": "color(gray a(0.2))",
 
         "commit_annotation_fg_0_border": "var(commit_edge_0)",
         "commit_annotation_fg_1_border": "var(commit_edge_1)",
@@ -104,86 +106,86 @@
         "side_bar_container_bg": "var(--background)",
 
         // Table of Contents
-        "table_of_contents_bg": "color(var(--background) l(+ 3%))",
+        "table_of_contents_bg": "color(var(--background)",
         "table_of_contents_fg": "var(text)",
         "table_of_contents_heading_fg": "var(text-heading)",
-        "table_of_contents_row_bg": "color(var(--background) l(+ 30%))",
+        "table_of_contents_row_bg": "var(selection-highlight)",
 
         // Detail panel
         "detail_panel_bg": "var(--background)",
         "field_name_fg": "var(text)",
-        "author_fg": "color(var(white) a(0.4))",
+        "author_fg": "color(var(black) a(0.4))",
         "terminator_fg": "var(text)",
 
         "remote_ann_fg": "color(var(--background) a(0.7))",
         "remote_ann_bg": "var(green)",
 
         "stash_ann_fg": "var(text)",
-        "stash_ann_bg": "color(var(white) a(20%))",
-        "stash_ann_border": "color(var(white) a(50%))",
+        "stash_ann_bg": "color(var(black) a(20%))",
+        "stash_ann_border": "color(var(black) a(50%))",
 
         "tag_ann_fg": "var(--background)",
         "tag_ann_bg": "var(yellow)",
         "tag_ann_opacity": 0.4,
 
         "file_ann_fg": "var(text)",
-        "file_ann_bg": "color(var(white) a(0.2))",
+        "file_ann_bg": "color(gray a(0.2))",
 
         "submodule_ann_fg": "var(text)",
-        "submodule_ann_bg": "color(var(white) a(20%))",
+        "submodule_ann_bg": "color(var(black) a(20%))",
         "submodule_light_ann_fg": "var(text)",
-        "submodule_light_ann_bg": "color(var(white) a(20%))",
+        "submodule_light_ann_bg": "color(var(black) a(20%))",
 
-        "inserted_ann_bg": "color(var(green) blend(var(darken) 35%))",
-        "deleted_ann_bg": "color(var(pink) blend(var(darken) 35%))",
+        "inserted_ann_bg": "color(var(green) blend(var(lighten) 35%))",
+        "deleted_ann_bg": "color(var(pink) blend(var(lighten) 35%))",
 
         // Diff headers
-        "file_diff_shadow": "color(black a(0.5))",
+        "file_diff_shadow": "color(white a(0.5))",
         "file_icon_bg": "color(var(text) a(0.2))",
 
-        "hunk_button_fg": "white",
-        "hunk_button_shadow": "color(black a(0.5))",
+        "hunk_button_fg": "var(text)",
+        "hunk_button_shadow": "color(white a(0.5))",
 
-        "file_header_bg": "color(var(--background) l(+ 5%))",
-        "file_header_bg-hover": "color(var(--background) l(+ 10%))",
+        "file_header_bg": "color(var(--background) l(- 5%))",
+        "file_header_bg-hover": "color(var(--background) l(- 10%))",
 
-        "hunk_header_bg": "color(var(--background) l(+ 10%))",
+        "hunk_header_bg": "color(var(--background) l(- 10%))",
 
         "deleted_icon_fg": "var(text)",
         "deleted_header_bg": "var(dark_red)",
-        "deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
+        "deleted_header_bg-hover": "color(var(dark_red) l(- 5%))",
 
         "unmerged_icon_fg": "var(text)",
         "unmerged_header_bg": "var(dark_blue)",
-        "unmerged_header_bg-hover": "color(var(dark_blue) l(+ 3%))",
+        "unmerged_header_bg-hover": "color(var(dark_blue) l(- 3%))",
 
         "recent_icon_fg": "var(yellow)",
         "recent_icon_bg": "transparent",
-        "untracked_header_bg": "hsl(250, 10%, 30%)",
-        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 5%))",
+        "untracked_header_bg": "color(var(purple) s(10%) l(80%))",
+        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(- 5%))",
 
         "full_context_icon_bg": "var(text)",
 
         "staged_icon_fg": "var(text)",
 
-        "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
-        "renamed_file_deleted": "color(var(red) s(50%) l(65%))",
+        "renamed_file_inserted": "color(var(green) s(60%) l(30%))",
+        "renamed_file_deleted": "color(var(red) s(70%) l(35%))",
 
         // Blame
-        "blame_popup_bg": "color(var(--background) l(+ 10%))",
+        "blame_popup_bg": "color(var(--background) l(- 10%))",
 
         // Buttons
-        "button_bg": "color(var(white) a(20%))",
+        "button_bg": "color(var(black) a(20%))",
         "button_fg": "var(label_color)",
-        "button_shadow": "color(black a(0.5))",
+        "button_shadow": "color(white a(0.5))",
 
         "highlighted_button_light_bg": "color(var(green) a(75%))",
         "highlighted_button_light_fg": "var(text)",
         "highlighted_button_dark_bg": "color(var(green) a(75%))",
         "highlighted_button_dark_fg": "var(text)",
-        "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
+        "highlighted_button_shadow": "color(white a(0.5) l(- 10%))",
 
-        "toggle_button_bg": "color(var(white) a(20%))", // This matches the header hover buttons
+        "toggle_button_bg": "color(var(black) a(20%))", // This matches the header hover buttons
         "toggle_button_fg": "var(text)",
         "toggle_button_fg_selected": "var(text-heading)",
 
@@ -203,7 +205,7 @@
 
         // Dialogs
         "dialog_bg": "var(--background)",
-        "dialog_button_bg": "color(var(white) a(20%))",
+        "dialog_button_bg": "color(var(black) a(20%))",
 
         // Progress bar
         "progress_bg": "var(header_button_bg)",
@@ -211,7 +213,7 @@
 
         // Quick panel
         "quick_panel_bg": "var(--background)",
-        "quick_panel_row_bg": "color(var(--background) l(+ 7%))",
+        "quick_panel_row_bg": "var(selection-highlight)",
         "quick_panel_fg": "var(text)",
         "quick_panel_fg-match": "var(--accent)",
         "quick_panel_fg-selected": "var(text)",
@@ -248,36 +250,67 @@
         "file_badge_created_fg": "var(green)",
         "file_badge_deleted_fg": "var(pink)",
         "file_badge_modified_fg": "var(yellow)",
+        "file_badge_created_bg": "color(var(white) a(20%))",
         "file_badge_modified_bg": "color(var(white) a(20%))",
         "file_badge_unmerged_fg": "var(cyan)",
         "file_badge_unmerged_bg": "color(var(white) a(20%))",
-        "file_badge_untracked_fg": "var(purple)",
+        "file_badge_untracked_fg": "var(red)",
         "file_badge_untracked_bg": "color(var(white) a(20%))",
         "file_badge_staged_fg": "var(green)",
         "file_badge_staged_bg": "color(var(white) a(20%))",
+
     },
     "rules":
     [
-        // {
-        //     "class": "title_bar",
-        //     "bg": "var(--background)",
-        //     "settings": ["themed_title_bar"],
-        // },
-        // {
-        //     "class": "title_bar",
-        //     "attributes": ["panel_visible"],
-        //     "bg": "var(--background)",
-        //     "settings": ["themed_title_bar"],
-        // },
         {
             "class": "file_icon",
             "parents": [{"class": "file_diff_header"}],
-            "layer0.tint": "color(var(white) a(20%))"
+            "layer0.tint": "color(var(white))",
+            "layer0.opacity": 0.8
         },
-{
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.6
+        },
+        {
+            "class": "table_of_contents_row_container",
+            "attributes": ["selected", "highlighted"],
+            "layer0.opacity": 1
+        },
+        {
             "class": "file_icon",
             "parents": [{"class": "untracked"}],
-            "layer0.tint": "color(var(white) a(20%))"
+            "layer0.tint": "color(var(white))",
+            "layer0.opacity": 0.8
+        },
+
+        // {
+        //     "class": "file_diff_header",
+        //     "parents": [{"class": "untracked"}],
+        //     "layer0.tint": "color(var(--background) l(- 5%))"
+        // },
+
+        // {
+        //     "class": "file_diff_header",
+        //     "parents": [{"class": "expand_all_diff_control untracked"}],
+        //     "layer0.tint": "color(var(--background) l(- 15%))"
+        // },
+        // {
+        //     "class": "file_icon_right",
+        //     "layer0.texture": "Theme - Merge/button_.png",
+        //     "fg": "red"
+        // },
+        {
+            "class": "title_bar",
+            "bg": "var(--background)",
+            "settings": ["themed_title_bar"],
+        },
+        {
+            "class": "title_bar",
+            "attributes": ["panel_visible"],
+            "bg": "var(--background)",
+            "settings": ["themed_title_bar"],
         },
         {
             "class": "tab_control",
@@ -380,12 +413,12 @@
         },
         {
             "class": "tool_tip_control",
-            "layer0.tint": "color(var(--accent) s(50%) l(75%))"
+            "layer0.tint": "color(var(--accent))"
         },
         {
             "class": "tab_close_button",
             "layer0.texture": "Theme - Default/common/tab_close.png",
-            "layer0.tint": "color(var(white) a(0.7))",
+            "layer0.tint": "color(var(black) a(0.7))",
             "layer0.opacity": 0.0
         },
         {
@@ -409,7 +442,7 @@
             "class": "tab_close_button",
             "layer0.texture": "Theme - Default/common/tab_close.png",
             "attributes": ["hover"],
-            "layer0.tint": "color(var(white) a(0.7))",
+            "layer0.tint": "color(var(black) a(0.7))",
             "layer0.opacity": 0.7
         },
         {
@@ -436,53 +469,53 @@
         },
         {
             "class": "branch_table",
-            "dark_content": true
+            "dark_content": false
         },
         {
             "class": "commit_table",
-            "dark_content": true
+            "dark_content": false
         },
-        {
-            "class": "scroll_track_control",
-            "parents": [{"class": "commit_table_container"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
-        },
-        {
-            "class": "puck_control",
-            "parents": [{"class": "commit_table_container"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
-        },
+        // {
+        //     "class": "scroll_track_control",
+        //     "parents": [{"class": "commit_table_container"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        // },
+        // {
+        //     "class": "puck_control",
+        //     "parents": [{"class": "commit_table_container"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        // },
 
-        {
-            "class": "scroll_track_control",
-            "parents": [{"class": "side_bar_container"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
-        },
-        {
-            "class": "puck_control",
-            "parents": [{"class": "side_bar_container"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
-        },
-        {
-            "class": "scroll_track_control",
-            "parents": [{"class": "details_panel"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
-        },
-        {
-            "class": "puck_control",
-            "parents": [{"class": "details_panel"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck.png"
-        },
-        {
-            "class": "scroll_track_control",
-            "parents": [{"class": "overlay_control"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
-        },
-        {
-            "class": "puck_control",
-            "parents": [{"class": "overlay_control"}],
-            "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
-        },
+        // {
+        //     "class": "scroll_track_control",
+        //     "parents": [{"class": "side_bar_container"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        // },
+        // {
+        //     "class": "puck_control",
+        //     "parents": [{"class": "side_bar_container"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        // },
+        // {
+        //     "class": "scroll_track_control",
+        //     "parents": [{"class": "details_panel"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        // },
+        // {
+        //     "class": "puck_control",
+        //     "parents": [{"class": "details_panel"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_puck.png"
+        // },
+        // {
+        //     "class": "scroll_track_control",
+        //     "parents": [{"class": "overlay_control"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_bar.png",
+        // },
+        // {
+        //     "class": "puck_control",
+        //     "parents": [{"class": "overlay_control"}],
+        //     "layer0.texture": "Theme - Merge/dark_scroll_puck.png",
+        // },
         {
             "class": "text_line_control",
             "layer0.tint": "var(--background)"
@@ -583,38 +616,43 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(red)"
+            "layer0.tint": "var(red)",
+            "layer0.opacity": 0.8
         },
 
         {
             "class": "staged_badge",
-            "layer0.tint": "var(file_badge_staged_bg)"
-        },
-        {
-            "class": "staged_badge",
-            "parents": [
-                {
-                    "class": "file_diff_header"
-                }
-            ],
-            "layer0.tint": "var(file_badge_staged_bg)"
+            "layer0.tint": "var(file_badge_staged_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "staged_badge",
             "parents": [
                 {
+                    "class": "file_diff_header"
+                }
+            ],
+            "layer0.tint": "var(file_badge_staged_bg)",
+            "layer0.opacity": 0.8
+        },
+        {
+            "class": "staged_badge",
+            "parents": [
+                {
                     "class": "file_diff_header",
                     "attributes": [
                         "hover"
                     ]
                 }
             ],
-            "layer0.tint": "var(file_badge_staged_bg)"
+            "layer0.tint": "var(file_badge_staged_bg)",
+            "layer0.opacity": 0.8
         },
 
         {
             "class": "modified_badge",
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(file_badge_modified_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "modified_badge",
@@ -623,7 +661,8 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(file_badge_modified_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "modified_badge",
@@ -635,12 +674,14 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(file_badge_modified_bg)"
+            "layer0.tint": "var(file_badge_modified_bg)",
+            "layer0.opacity": 0.8
         },
 
         {
             "class": "unmerged_badge",
-            "layer0.tint": "var(file_badge_unmerged_bg)"
+            "layer0.tint": "var(file_badge_unmerged_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "unmerged_badge",
@@ -649,7 +690,8 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(file_badge_unmerged_bg)"
+            "layer0.tint": "var(file_badge_unmerged_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "unmerged_badge",
@@ -661,12 +703,14 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(file_badge_unmerged_bg)"
+            "layer0.tint": "var(file_badge_unmerged_bg)",
+            "layer0.opacity": 0.8
         },
 
         {
             "class": "untracked_badge",
-            "layer0.tint": "var(file_badge_untracked_bg)"
+            "layer0.tint": "var(file_badge_untracked_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "untracked_badge",
@@ -675,7 +719,8 @@
                     "class": "file_diff_header"
                 }
             ],
-            "layer0.tint": "var(file_badge_untracked_bg)"
+            "layer0.tint": "var(file_badge_untracked_bg)",
+            "layer0.opacity": 0.8
         },
         {
             "class": "untracked_badge",
@@ -687,7 +732,8 @@
                     ]
                 }
             ],
-            "layer0.tint": "var(file_badge_untracked_bg)"
+            "layer0.tint": "var(file_badge_untracked_bg)",
+            "layer0.opacity": 0.8
         },
 
         {
@@ -757,17 +803,17 @@
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "fg": "var(white)"
+            "fg": "var(black)"
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected"]}],
-            "fg": "color(var(white) a(0.5))"
+            "fg": "color(var(black) a(0.5))"
         },
         {
             "class": "tab_label",
             "parents": [{"class": "tab_control", "attributes": ["!selected", "hover"]}],
-            "fg": "color(var(white) a(0.7))"
+            "fg": "color(var(black) a(0.7))"
         },
         {
             "class": "icon_folder",
@@ -794,7 +840,7 @@
                 }
             ],
             "layer0.opacity": 0.3,
-            "layer0.tint": "var(white)"
+            "layer0.tint": "var(black)"
         },
 
         {
@@ -809,7 +855,8 @@
                 }
             ],
             "layer0.opacity": 0.6,
-            "layer0.tint": "var(white)"
-        }
+            "layer0.tint": "var(black)"
+        },
+
     ]
 }

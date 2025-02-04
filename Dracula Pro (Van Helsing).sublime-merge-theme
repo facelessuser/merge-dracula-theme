@@ -8,7 +8,7 @@
         "preferences_overlay_bg": "color(var(--background) l(+ 10%))",
         "file_header_bg": "color(var(--background) l(+ 10%))",
         "file_header_bg-hover": "color(var(--background) l(+ 15%))",
-        "hunk_header_bg": "color(var(--background) l(+ 17%))",
+        "hunk_header_bg": "color(var(--background) l(+ 15%))",
         "commit_list_bg": "color(var(--background) l(+ 6%))",
         "commit_row_bg-hover": "color(var(--background) l(+ 16%) s(+ 3%))",
         "location_bar_row_bg-hover": "color(var(--background) l(+ 14%))",
