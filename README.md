@@ -23,29 +23,6 @@ folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file
 }
 ```
 
-## Alternative Theme: Alucard
-
-We also provide an additional theme called `Dracula (Alucard)`. Instead of of using the `Dracula.sublime-color-scheme`
-provided by our [color scheme package](https://github.com/facelessuser/sublime-dracula-scheme), it uses the
-`Dracula (Alucard).sublime-color-scheme` provided by the same package. The Alucard color scheme deviates from Dracula
-"proper" by making some minor adjustments to the color palette. Mainly, it uses different colors for line highlight.
-
-In the past, some people have complained about Dracula's default line highlight. Claims have been made that it can make
-some text difficult to see. If you have line highlighting enabled in Merge, and feel the default line highlighting is
-troublesome, Alucard may be a better option.
-
-Alucard uses a line highlight color that looks more subtle against the background and makes text easier to see. In all
-other respects, the theme looks exactly like the default Dracula theme. So if line highlight is not enabled in Merge,
-or you are a Dracula purist, then the classic theme may be the preferred option.
-
-```jsonc
-//  Packages/User/Preferences.sublime-settings
-
-{
-    "theme": "Dracula (Alucard).sublime-merge-theme"
-}
-```
-
 ## Dracula Pro
 
 **We are not affiliated with Dracula Pro, nor do we condone using the official paid for themes without paying for them,
@@ -59,13 +36,6 @@ site, and any that were not were derived from the information gathered there.
 
 For those who want access to officially supported Dracula themes, they should consider purchasing Dracula pro from the
 official [Dracula Pro site](https://draculatheme.com/pro).
-
-### Dracula Pro (Alucard)
-
-The Dracula Pro (Alucard) theme is just like the Alucard theme except it uses the Pro palette and the classic Dracula
-background and comments.
-
-![Alucard](screenshots/Merge%20-%20Alucard.png)
 
 ### Dracula Pro
 
@@ -94,3 +64,11 @@ background and comments.
 ### Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
+
+### Dracula Pro (Nosferatu)
+
+Nosferatu Pro is our take on a Pro theme with the classic Dracula background and comments. It gives a more bluish
+background hue than the purple hue of the normal Pro theme. We feel this combination was a missed opportunity for lovers
+of the original Dracula.
+
+![Nosferatu](screenshots/Merge%20-%20Nosferatu.png)
