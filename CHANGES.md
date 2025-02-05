@@ -6,7 +6,8 @@
     that shares the same name.
 -   **NEW**: Non-pro Alucard has been removed and line highlight improvements are now included in classic Dracula by
     default.
--   **NEW**: Add our take on the official Dracula Pro Alucard light theme.
+-   **NEW**: Add our take on the official Dracula Pro Alucard light theme. This is a first pass, report issues if any
+    found.
 -   **NEW**: Minor tweaks to the dark themes.
 
 ## 2.3
