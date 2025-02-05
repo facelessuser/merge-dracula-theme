@@ -41,29 +41,85 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 
 ![Pro](screenshots/Merge%20-%20Pro.png)
 
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro.sublime-merge-theme"
+}
+```
+
 ### Dracula Pro (Alucard)
 
 ![Alucard](screenshots/Merge%20-%20Alucard.png)
+
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Alucard).sublime-merge-theme"
+}
+```
 
 ### Dracula Pro (Buffy)
 
 ![Buffy](screenshots/Merge%20-%20Buffy.png)
 
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Buffy).sublime-merge-theme"
+}
+```
+
 ### Dracula Pro (Blade)
 
 ![Blade](screenshots/Merge%20-%20Blade.png)
+
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Blade).sublime-merge-theme"
+}
+```
 
 ### Dracula Pro (Lincoln)
 
 ![Lincoln](screenshots/Merge%20-%20Lincoln.png)
 
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Lincoln).sublime-merge-theme"
+}
+```
+
 ### Dracula Pro (Morbius)
 
 ![Morbius](screenshots/Merge%20-%20Morbius.png)
 
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Morbius).sublime-merge-theme"
+}
+```
+
 ### Dracula Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
+
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Van Helsing).sublime-merge-theme"
+}
+```
 
 ### Dracula Pro (Nosferatu)
 
@@ -72,3 +128,11 @@ background hue than the purple hue of the normal Pro theme. We feel this combina
 of the original Dracula.
 
 ![Nosferatu](screenshots/Merge%20-%20Nosferatu.png)
+
+```jsonc
+//  Packages/User/Preferences.sublime-settings
+
+{
+    "theme": "Dracula Pro (Nosferatu).sublime-merge-theme"
+}
+```
