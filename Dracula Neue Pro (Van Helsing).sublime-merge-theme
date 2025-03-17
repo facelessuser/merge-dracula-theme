@@ -1,0 +1,20 @@
+{
+    "name": "Dracula Neue Pro (Van Helsing)",
+    "extends": "Dracula Neue Common.hidden-theme",
+    "variables": {
+        "dark_gray-dark": "color(var(--background) l(13%))",
+        "welcome_bg": "color(var(--background) l(+ 15%))",
+        "recent_repositories_row_bg-hover": "color(var(--background) l(+ 20%))",
+        "preferences_overlay_bg": "color(var(--background) l(+ 10%))",
+        "file_header_bg": "color(var(--background) l(+ 10%))",
+        "file_header_bg-hover": "color(var(--background) l(+ 15%))",
+        "hunk_header_bg": "color(var(--background) l(+ 15%))",
+        "commit_list_bg": "color(var(--background) l(+ 6%))",
+        "commit_row_bg-hover": "color(var(--background) l(+ 16%) s(+ 3%))",
+        "location_bar_row_bg-hover": "color(var(--background) l(+ 14%))",
+        "untracked_header_bg": "color(var(--background) s(- 5%) l(+ 20%))",
+        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 5%))",
+        "quick_panel_row_bg": "color(var(--background) l(+ 14%))"
+    },
+    "rules": []
+}

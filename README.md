@@ -1,4 +1,4 @@
-# Theme - Dracula
+# Theme - Dracula Neue
 
 [Dracula](https://draculatheme.com/) theme for Sublime Merge 2.
 
@@ -12,18 +12,20 @@ Dracula color scheme. Additionally, we also provide Dracula Pro inspired variant
 
 ## Install
 
-Assuming the required color scheme is installed, git clone the project or download it into your Sublime Merge `Packages`
-folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file to use the Dracula theme:
+Use Package Control (should be available soon).
+
+Or, assuming the required color scheme is installed, git clone the project or download it into your Sublime Merge `Packages`
+folder as `Theme - Dracula Neue`. Edit your merge `Preferences.sublime-settings` file to use the Dracula theme:
 
 ```jsonc
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Classic.sublime-merge-theme"
+    "theme": "Dracula Neue Classic.sublime-merge-theme"
 }
 ```
 
-## Dracula Pro
+## Dracula Neue Pro Variants
 
 **We are not affiliated with Dracula Pro, nor do we condone using the official paid for themes without paying for them,
 but this theme is an original work that uses the Dracula Pro palette, the theme itself is not derived from the source of
@@ -37,7 +39,7 @@ site, and any that were not were derived from the information gathered there.
 For those who want access to officially supported Dracula themes, they should consider purchasing Dracula pro from the
 official [Dracula Pro site](https://draculatheme.com/pro).
 
-### Dracula Pro
+### Dracula Neue Pro
 
 ![Pro](screenshots/Merge%20-%20Pro.png)
 
@@ -45,11 +47,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro.sublime-merge-theme"
+    "theme": "Dracula Neue Pro.sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Alucard)
+### Dracula Neue Pro (Alucard)
 
 ![Alucard](screenshots/Merge%20-%20Alucard.png)
 
@@ -57,11 +59,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Alucard).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Alucard).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Buffy)
+### Dracula Neue Pro (Buffy)
 
 ![Buffy](screenshots/Merge%20-%20Buffy.png)
 
@@ -69,11 +71,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Buffy).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Buffy).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Blade)
+### Dracula Neue Pro (Blade)
 
 ![Blade](screenshots/Merge%20-%20Blade.png)
 
@@ -81,11 +83,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Blade).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Blade).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Lincoln)
+### Dracula Neue Pro (Lincoln)
 
 ![Lincoln](screenshots/Merge%20-%20Lincoln.png)
 
@@ -93,11 +95,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Lincoln).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Lincoln).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Morbius)
+### Dracula Neue Pro (Morbius)
 
 ![Morbius](screenshots/Merge%20-%20Morbius.png)
 
@@ -105,11 +107,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Morbius).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Morbius).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Van Helsing)
+### Dracula Neue Pro (Van Helsing)
 
 ![Van Helsing](screenshots/Merge%20-%20Van%20Helsing.png)
 
@@ -117,11 +119,11 @@ official [Dracula Pro site](https://draculatheme.com/pro).
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Van Helsing).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Van Helsing).sublime-merge-theme"
 }
 ```
 
-### Dracula Pro (Nosferatu)
+### Dracula Neue Pro (Nosferatu)
 
 Nosferatu Pro is our take on a Pro theme with the classic Dracula background and comments. It gives a more bluish
 background hue than the purple hue of the normal Pro theme. We feel this combination was a missed opportunity for lovers
@@ -133,6 +135,6 @@ of the original Dracula.
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula Pro (Nosferatu).sublime-merge-theme"
+    "theme": "Dracula Neue Pro (Nosferatu).sublime-merge-theme"
 }
 ```

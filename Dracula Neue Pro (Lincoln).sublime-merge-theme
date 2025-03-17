@@ -1,0 +1,6 @@
+{
+    "name": "Dracula Neue Pro (Lincoln)",
+    "extends": "Dracula Neue Common.hidden-theme",
+    "variables": {},
+    "rules": []
+}

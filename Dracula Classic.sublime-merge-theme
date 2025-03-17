@@ -1,6 +1,0 @@
-{
-    "name": "Dracula Classic",
-    "extends": "Dracula Common.hidden-theme",
-    "variables": {},
-    "rules": []
-}
