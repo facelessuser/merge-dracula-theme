@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0
+
+-   **NEW**: Rebrand as "Dracula Neue".
+
 ## 2.5
 
 -   **NEW**: Rename Dracula theme to "Dracula Classic". This aligns with a recent change in the color schemes that this
