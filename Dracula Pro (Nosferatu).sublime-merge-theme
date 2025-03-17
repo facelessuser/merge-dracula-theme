@@ -1,6 +1,6 @@
 {
     "name": "Dracula Pro (Alucard)",
-    "extends": "Dracula.hidden-theme",
+    "extends": "Dracula Common.hidden-theme",
     "variables": {},
     "rules": []
 }

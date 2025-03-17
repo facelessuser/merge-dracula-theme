@@ -19,7 +19,7 @@ folder as `Theme - Dracula`. Edit your merge `Preferences.sublime-settings` file
 //  Packages/User/Preferences.sublime-settings
 
 {
-    "theme": "Dracula.sublime-merge-theme"
+    "theme": "Dracula Classic.sublime-merge-theme"
 }
 ```
 

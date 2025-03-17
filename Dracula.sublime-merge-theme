@@ -1,6 +1,0 @@
-{
-    "name": "Dracula",
-    "extends": "Dracula.hidden-theme",
-    "variables": {},
-    "rules": []
-}

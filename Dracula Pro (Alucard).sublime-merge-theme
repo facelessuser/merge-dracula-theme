@@ -1,6 +1,6 @@
 {
     "name": "Dracula Pro (Alucard)",
-    "extends": "Dracula.hidden-theme",
+    "extends": "Dracula Common.hidden-theme",
     "variables":
     {
         "shadow_color": "hsl(0, 0%, 100%)",

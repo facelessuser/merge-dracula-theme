@@ -1,6 +1,6 @@
 {
     "name": "Dracula Pro (Van Helsing)",
-    "extends": "Dracula.hidden-theme",
+    "extends": "Dracula Common.hidden-theme",
     "variables": {
         "dark_gray-dark": "color(var(--background) l(13%))",
         "welcome_bg": "color(var(--background) l(+ 15%))",
