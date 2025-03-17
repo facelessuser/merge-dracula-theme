@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.5
+
+-   **NEW**: Rename Dracula theme to "Dracula Classic". This aligns with a recent change in the color schemes that this
+    theme relies on.
+
 ## 2.4
 
 -   **NEW**: Rename our custom Alucard to Nosferatu in order to avoid conflict with the offical Dracula Pro light theme
